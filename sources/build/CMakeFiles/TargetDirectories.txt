@@ -1,0 +1,4 @@
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles/kivrtos_stdlib.dir
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles/kernel.dir
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles/edit_cache.dir
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles/rebuild_cache.dir

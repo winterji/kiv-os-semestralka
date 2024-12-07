@@ -1,0 +1,9 @@
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/build/CMakeFiles/init_task.dir
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/build/CMakeFiles/sos_task.dir
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/build/CMakeFiles/oled_task.dir
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/build/CMakeFiles/logger_task.dir
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/build/CMakeFiles/counter_task.dir
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/build/CMakeFiles/tilt_task.dir
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/build/CMakeFiles/hello_task.dir
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/build/CMakeFiles/edit_cache.dir
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/build/CMakeFiles/rebuild_cache.dir

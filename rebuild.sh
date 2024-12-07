@@ -1,7 +1,5 @@
-cd sources/userspace
+cd sources
 rm -r build
+echo "Build directory removed"
 ./build.sh
-
-cd ..
-rm -r build
-./build.sh
+echo "Build directory rebuilt"
