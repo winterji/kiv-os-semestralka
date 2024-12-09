@@ -202,4 +202,26 @@ namespace hal
 		Data_Delay		= 6,
 		CLKT			= 7,	// clock stretch timeout
 	};
+
+	constexpr unsigned long I2C_SLAVE_Base = Peripheral_Base + 0x7E214000;
+
+	enum class I2C_SLAVE_Reg
+	{
+		DR			= 0,
+		RSR			= 1,
+		SLV			= 2,
+		CR			= 3,
+		FR			= 4,
+		IFLS		= 5,
+		IMSC		= 6,
+		RIS			= 7,
+		MIS			= 8,
+		ICR			= 9,
+		DMACR		= 10,
+		TDR			= 11,
+		GPUSTAT		= 12,
+		HCTRL		= 13,
+		DEBUG1		= 14,
+		DEBUG2		= 15,
+	};
 }

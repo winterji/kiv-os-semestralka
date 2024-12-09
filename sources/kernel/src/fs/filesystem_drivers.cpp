@@ -17,7 +17,7 @@ const CFilesystem::TFS_Driver CFilesystem::gFS_Drivers[] = {
     // "skutecna" zarizeni
     { "GPIO_FS", "DEV:gpio", &fsGPIO_FS_Driver },
     { "UART_FS", "DEV:uart", &fsUART_FS_Driver },
-    // { "TRNG_FS", "DEV:trng", &fsTRNG_FS_Driver },
+    { "TRNG_FS", "DEV:trng", &fsTRNG_FS_Driver },
     // { "Shift_Reg_FS", "DEV:sr", &fsShift_Register_FS_Driver },
     // { "7Seg_Disp_FS", "DEV:segd", &fsSegment_Display_FS_Driver },
     // { "OLED_Disp_FS", "DEV:oled", &fsOLED_Display_FS_Driver },
