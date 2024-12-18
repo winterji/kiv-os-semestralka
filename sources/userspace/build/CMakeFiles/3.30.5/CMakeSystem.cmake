@@ -1,6 +1,6 @@
-set(CMAKE_HOST_SYSTEM "Darwin-24.1.0")
+set(CMAKE_HOST_SYSTEM "Darwin-24.2.0")
 set(CMAKE_HOST_SYSTEM_NAME "Darwin")
-set(CMAKE_HOST_SYSTEM_VERSION "24.1.0")
+set(CMAKE_HOST_SYSTEM_VERSION "24.2.0")
 set(CMAKE_HOST_SYSTEM_PROCESSOR "arm64")
 
 include("/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/misc/cmake/toolchain-arm-none-eabi-rpi0.cmake")

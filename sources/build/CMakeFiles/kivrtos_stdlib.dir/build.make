@@ -111,26 +111,11 @@ CMakeFiles/kivrtos_stdlib.dir/stdlib/src/stdstring.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kivrtos_stdlib.dir/stdlib/src/stdstring.cpp.s"
 	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdstring.cpp -o CMakeFiles/kivrtos_stdlib.dir/stdlib/src/stdstring.cpp.s
 
-CMakeFiles/kivrtos_stdlib.dir/stdutils/src/oled.cpp.obj: CMakeFiles/kivrtos_stdlib.dir/flags.make
-CMakeFiles/kivrtos_stdlib.dir/stdutils/src/oled.cpp.obj: /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdutils/src/oled.cpp
-CMakeFiles/kivrtos_stdlib.dir/stdutils/src/oled.cpp.obj: CMakeFiles/kivrtos_stdlib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/kivrtos_stdlib.dir/stdutils/src/oled.cpp.obj"
-	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kivrtos_stdlib.dir/stdutils/src/oled.cpp.obj -MF CMakeFiles/kivrtos_stdlib.dir/stdutils/src/oled.cpp.obj.d -o CMakeFiles/kivrtos_stdlib.dir/stdutils/src/oled.cpp.obj -c /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdutils/src/oled.cpp
-
-CMakeFiles/kivrtos_stdlib.dir/stdutils/src/oled.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kivrtos_stdlib.dir/stdutils/src/oled.cpp.i"
-	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdutils/src/oled.cpp > CMakeFiles/kivrtos_stdlib.dir/stdutils/src/oled.cpp.i
-
-CMakeFiles/kivrtos_stdlib.dir/stdutils/src/oled.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kivrtos_stdlib.dir/stdutils/src/oled.cpp.s"
-	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdutils/src/oled.cpp -o CMakeFiles/kivrtos_stdlib.dir/stdutils/src/oled.cpp.s
-
 # Object files for target kivrtos_stdlib
 kivrtos_stdlib_OBJECTS = \
 "CMakeFiles/kivrtos_stdlib.dir/stdlib/src/stdfile.cpp.obj" \
 "CMakeFiles/kivrtos_stdlib.dir/stdlib/src/stdmutex.cpp.obj" \
-"CMakeFiles/kivrtos_stdlib.dir/stdlib/src/stdstring.cpp.obj" \
-"CMakeFiles/kivrtos_stdlib.dir/stdutils/src/oled.cpp.obj"
+"CMakeFiles/kivrtos_stdlib.dir/stdlib/src/stdstring.cpp.obj"
 
 # External object files for target kivrtos_stdlib
 kivrtos_stdlib_EXTERNAL_OBJECTS =
@@ -138,10 +123,9 @@ kivrtos_stdlib_EXTERNAL_OBJECTS =
 libkivrtos_stdlib.a: CMakeFiles/kivrtos_stdlib.dir/stdlib/src/stdfile.cpp.obj
 libkivrtos_stdlib.a: CMakeFiles/kivrtos_stdlib.dir/stdlib/src/stdmutex.cpp.obj
 libkivrtos_stdlib.a: CMakeFiles/kivrtos_stdlib.dir/stdlib/src/stdstring.cpp.obj
-libkivrtos_stdlib.a: CMakeFiles/kivrtos_stdlib.dir/stdutils/src/oled.cpp.obj
 libkivrtos_stdlib.a: CMakeFiles/kivrtos_stdlib.dir/build.make
 libkivrtos_stdlib.a: CMakeFiles/kivrtos_stdlib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libkivrtos_stdlib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libkivrtos_stdlib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/kivrtos_stdlib.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/kivrtos_stdlib.dir/link.txt --verbose=$(VERBOSE)
 

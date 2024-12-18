@@ -19,11 +19,6 @@ CMakeFiles/kernel.dir/kernel/src/fs/filesystem_drivers.cpp.obj: \
  /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/include/drivers/trng.h \
  /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/include/fs/drivers/shiftregister_fs.h \
  /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/include/drivers/shiftregister.h \
- /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/include/fs/drivers/segmentdisplay_fs.h \
- /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/include/drivers/segmentdisplay.h \
- /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/include/fs/drivers/oled_ssd1306_fs.h \
- /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/include/drivers/oled_ssd1306.h \
- /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/include/drivers/i2c.h \
  /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/include/fs/drivers/semaphore_fs.h \
  /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/include/process/semaphore.h \
  /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/include/process/resource_manager.h \
@@ -32,4 +27,9 @@ CMakeFiles/kernel.dir/kernel/src/fs/filesystem_drivers.cpp.obj: \
  /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/include/process/pipe.h \
  /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/include/fs/drivers/mutex_fs.h \
  /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/include/fs/drivers/condvar_fs.h \
- /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/include/fs/drivers/pipe_fs.h
+ /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/include/fs/drivers/pipe_fs.h \
+ /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/include/fs/drivers/i2c_fs.h \
+ /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/include/drivers/i2c_slave.h \
+ /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/include/drivers/i2c.h \
+ /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/include/drivers/bridges/i2c_defs.h \
+ /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/include/drivers/i2c_master.h

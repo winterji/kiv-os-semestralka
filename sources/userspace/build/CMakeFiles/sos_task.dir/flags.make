@@ -6,19 +6,19 @@
 # compile CXX with /opt/homebrew/bin/arm-none-eabi-g++
 ASM_DEFINES = -DRPI0 -DRPI0=1
 
-ASM_INCLUDES = -I/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/../kernel/include -I/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/../stdlib/include -I/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/../stdutils/include -I/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/../kernel/include/board/rpi0
+ASM_INCLUDES = -I/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/../kernel/include -I/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/../stdlib/include -I/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/../kernel/include/board/rpi0
 
 ASM_FLAGS =  -O0 -g -nostartfiles -mfloat-abi=hard -mfpu=vfp -march=armv6zk -mtune=arm1176jzf-s
 
 C_DEFINES = -DRPI0 -DRPI0=1
 
-C_INCLUDES = -I/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/../kernel/include -I/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/../stdlib/include -I/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/../stdutils/include -I/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/../kernel/include/board/rpi0
+C_INCLUDES = -I/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/../kernel/include -I/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/../stdlib/include -I/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/../kernel/include/board/rpi0
 
 C_FLAGS =  -O0 -g -nostartfiles -mfloat-abi=hard -mfpu=vfp -march=armv6zk -mtune=arm1176jzf-s -O0 -g -nostartfiles -mfloat-abi=hard -mfpu=vfp -march=armv6zk -mtune=arm1176jzf-s
 
 CXX_DEFINES = -DRPI0 -DRPI0=1
 
-CXX_INCLUDES = -I/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/../kernel/include -I/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/../stdlib/include -I/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/../stdutils/include -I/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/../kernel/include/board/rpi0
+CXX_INCLUDES = -I/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/../kernel/include -I/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/../stdlib/include -I/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/../kernel/include/board/rpi0
 
 CXX_FLAGS =  -O0 -g -nostartfiles -mfloat-abi=hard -mfpu=vfp -march=armv6zk -mtune=arm1176jzf-s -fno-exceptions -fno-rtti -O0 -g -nostartfiles -mfloat-abi=hard -mfpu=vfp -march=armv6zk -mtune=arm1176jzf-s -fno-exceptions -fno-rtti
 

@@ -238,53 +238,53 @@ kernel/src/drivers/i2c.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kernel.dir/build.make CMakeFiles/kernel.dir/kernel/src/drivers/i2c.cpp.s
 .PHONY : kernel/src/drivers/i2c.cpp.s
 
-kernel/src/drivers/oled_ssd1306.obj: kernel/src/drivers/oled_ssd1306.cpp.obj
-.PHONY : kernel/src/drivers/oled_ssd1306.obj
+kernel/src/drivers/i2c_master.obj: kernel/src/drivers/i2c_master.cpp.obj
+.PHONY : kernel/src/drivers/i2c_master.obj
 
 # target to build an object file
-kernel/src/drivers/oled_ssd1306.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kernel.dir/build.make CMakeFiles/kernel.dir/kernel/src/drivers/oled_ssd1306.cpp.obj
-.PHONY : kernel/src/drivers/oled_ssd1306.cpp.obj
+kernel/src/drivers/i2c_master.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kernel.dir/build.make CMakeFiles/kernel.dir/kernel/src/drivers/i2c_master.cpp.obj
+.PHONY : kernel/src/drivers/i2c_master.cpp.obj
 
-kernel/src/drivers/oled_ssd1306.i: kernel/src/drivers/oled_ssd1306.cpp.i
-.PHONY : kernel/src/drivers/oled_ssd1306.i
+kernel/src/drivers/i2c_master.i: kernel/src/drivers/i2c_master.cpp.i
+.PHONY : kernel/src/drivers/i2c_master.i
 
 # target to preprocess a source file
-kernel/src/drivers/oled_ssd1306.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kernel.dir/build.make CMakeFiles/kernel.dir/kernel/src/drivers/oled_ssd1306.cpp.i
-.PHONY : kernel/src/drivers/oled_ssd1306.cpp.i
+kernel/src/drivers/i2c_master.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kernel.dir/build.make CMakeFiles/kernel.dir/kernel/src/drivers/i2c_master.cpp.i
+.PHONY : kernel/src/drivers/i2c_master.cpp.i
 
-kernel/src/drivers/oled_ssd1306.s: kernel/src/drivers/oled_ssd1306.cpp.s
-.PHONY : kernel/src/drivers/oled_ssd1306.s
+kernel/src/drivers/i2c_master.s: kernel/src/drivers/i2c_master.cpp.s
+.PHONY : kernel/src/drivers/i2c_master.s
 
 # target to generate assembly for a file
-kernel/src/drivers/oled_ssd1306.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kernel.dir/build.make CMakeFiles/kernel.dir/kernel/src/drivers/oled_ssd1306.cpp.s
-.PHONY : kernel/src/drivers/oled_ssd1306.cpp.s
+kernel/src/drivers/i2c_master.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kernel.dir/build.make CMakeFiles/kernel.dir/kernel/src/drivers/i2c_master.cpp.s
+.PHONY : kernel/src/drivers/i2c_master.cpp.s
 
-kernel/src/drivers/segmentdisplay.obj: kernel/src/drivers/segmentdisplay.cpp.obj
-.PHONY : kernel/src/drivers/segmentdisplay.obj
+kernel/src/drivers/i2c_slave.obj: kernel/src/drivers/i2c_slave.cpp.obj
+.PHONY : kernel/src/drivers/i2c_slave.obj
 
 # target to build an object file
-kernel/src/drivers/segmentdisplay.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kernel.dir/build.make CMakeFiles/kernel.dir/kernel/src/drivers/segmentdisplay.cpp.obj
-.PHONY : kernel/src/drivers/segmentdisplay.cpp.obj
+kernel/src/drivers/i2c_slave.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kernel.dir/build.make CMakeFiles/kernel.dir/kernel/src/drivers/i2c_slave.cpp.obj
+.PHONY : kernel/src/drivers/i2c_slave.cpp.obj
 
-kernel/src/drivers/segmentdisplay.i: kernel/src/drivers/segmentdisplay.cpp.i
-.PHONY : kernel/src/drivers/segmentdisplay.i
+kernel/src/drivers/i2c_slave.i: kernel/src/drivers/i2c_slave.cpp.i
+.PHONY : kernel/src/drivers/i2c_slave.i
 
 # target to preprocess a source file
-kernel/src/drivers/segmentdisplay.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kernel.dir/build.make CMakeFiles/kernel.dir/kernel/src/drivers/segmentdisplay.cpp.i
-.PHONY : kernel/src/drivers/segmentdisplay.cpp.i
+kernel/src/drivers/i2c_slave.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kernel.dir/build.make CMakeFiles/kernel.dir/kernel/src/drivers/i2c_slave.cpp.i
+.PHONY : kernel/src/drivers/i2c_slave.cpp.i
 
-kernel/src/drivers/segmentdisplay.s: kernel/src/drivers/segmentdisplay.cpp.s
-.PHONY : kernel/src/drivers/segmentdisplay.s
+kernel/src/drivers/i2c_slave.s: kernel/src/drivers/i2c_slave.cpp.s
+.PHONY : kernel/src/drivers/i2c_slave.s
 
 # target to generate assembly for a file
-kernel/src/drivers/segmentdisplay.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kernel.dir/build.make CMakeFiles/kernel.dir/kernel/src/drivers/segmentdisplay.cpp.s
-.PHONY : kernel/src/drivers/segmentdisplay.cpp.s
+kernel/src/drivers/i2c_slave.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kernel.dir/build.make CMakeFiles/kernel.dir/kernel/src/drivers/i2c_slave.cpp.s
+.PHONY : kernel/src/drivers/i2c_slave.cpp.s
 
 kernel/src/drivers/shiftregister.obj: kernel/src/drivers/shiftregister.cpp.obj
 .PHONY : kernel/src/drivers/shiftregister.obj
@@ -926,30 +926,6 @@ stdlib/src/stdstring.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/kivrtos_stdlib.dir/build.make CMakeFiles/kivrtos_stdlib.dir/stdlib/src/stdstring.cpp.s
 .PHONY : stdlib/src/stdstring.cpp.s
 
-stdutils/src/oled.obj: stdutils/src/oled.cpp.obj
-.PHONY : stdutils/src/oled.obj
-
-# target to build an object file
-stdutils/src/oled.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kivrtos_stdlib.dir/build.make CMakeFiles/kivrtos_stdlib.dir/stdutils/src/oled.cpp.obj
-.PHONY : stdutils/src/oled.cpp.obj
-
-stdutils/src/oled.i: stdutils/src/oled.cpp.i
-.PHONY : stdutils/src/oled.i
-
-# target to preprocess a source file
-stdutils/src/oled.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kivrtos_stdlib.dir/build.make CMakeFiles/kivrtos_stdlib.dir/stdutils/src/oled.cpp.i
-.PHONY : stdutils/src/oled.cpp.i
-
-stdutils/src/oled.s: stdutils/src/oled.cpp.s
-.PHONY : stdutils/src/oled.s
-
-# target to generate assembly for a file
-stdutils/src/oled.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kivrtos_stdlib.dir/build.make CMakeFiles/kivrtos_stdlib.dir/stdutils/src/oled.cpp.s
-.PHONY : stdutils/src/oled.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -972,12 +948,12 @@ help:
 	@echo "... kernel/src/drivers/i2c.obj"
 	@echo "... kernel/src/drivers/i2c.i"
 	@echo "... kernel/src/drivers/i2c.s"
-	@echo "... kernel/src/drivers/oled_ssd1306.obj"
-	@echo "... kernel/src/drivers/oled_ssd1306.i"
-	@echo "... kernel/src/drivers/oled_ssd1306.s"
-	@echo "... kernel/src/drivers/segmentdisplay.obj"
-	@echo "... kernel/src/drivers/segmentdisplay.i"
-	@echo "... kernel/src/drivers/segmentdisplay.s"
+	@echo "... kernel/src/drivers/i2c_master.obj"
+	@echo "... kernel/src/drivers/i2c_master.i"
+	@echo "... kernel/src/drivers/i2c_master.s"
+	@echo "... kernel/src/drivers/i2c_slave.obj"
+	@echo "... kernel/src/drivers/i2c_slave.i"
+	@echo "... kernel/src/drivers/i2c_slave.s"
 	@echo "... kernel/src/drivers/shiftregister.obj"
 	@echo "... kernel/src/drivers/shiftregister.i"
 	@echo "... kernel/src/drivers/shiftregister.s"
@@ -1058,9 +1034,6 @@ help:
 	@echo "... stdlib/src/stdstring.obj"
 	@echo "... stdlib/src/stdstring.i"
 	@echo "... stdlib/src/stdstring.s"
-	@echo "... stdutils/src/oled.obj"
-	@echo "... stdutils/src/oled.i"
-	@echo "... stdutils/src/oled.s"
 .PHONY : help
 
 

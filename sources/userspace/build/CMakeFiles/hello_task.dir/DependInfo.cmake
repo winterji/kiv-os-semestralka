@@ -22,7 +22,6 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/../kernel/include"
   "/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/../stdlib/include"
-  "/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/../stdutils/include"
   "/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/../kernel/include/board/rpi0"
   )
 

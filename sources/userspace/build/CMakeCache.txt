@@ -223,8 +223,8 @@ CMAKE_STRIP:FILEPATH=/opt/homebrew/bin/arm-none-eabi-strip
 //Path to a program.
 CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 
-//The CMake toolchain file
-CMAKE_TOOLCHAIN_FILE:FILEPATH=/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/misc/cmake/toolchain-arm-none-eabi-rpi0.cmake
+//No help, variable specified on the command line.
+CMAKE_TOOLCHAIN_FILE:UNINITIALIZED=../../misc/cmake/toolchain-arm-none-eabi-rpi0.cmake
 
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console

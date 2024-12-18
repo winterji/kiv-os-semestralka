@@ -203,7 +203,7 @@ namespace hal
 		CLKT			= 7,	// clock stretch timeout
 	};
 
-	constexpr unsigned long I2C_SLAVE_Base = Peripheral_Base + 0x7E214000;
+	constexpr unsigned long I2C_SLAVE_Base = Peripheral_Base + 0x00214000;
 
 	enum class I2C_SLAVE_Reg
 	{

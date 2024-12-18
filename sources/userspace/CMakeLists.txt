@@ -9,8 +9,6 @@ INCLUDE_DIRECTORIES("${CMAKE_CURRENT_SOURCE_DIR}/../kernel/include/")
 
 INCLUDE_DIRECTORIES("${CMAKE_CURRENT_SOURCE_DIR}/../stdlib/include/")
 
-INCLUDE_DIRECTORIES("${CMAKE_CURRENT_SOURCE_DIR}/../stdutils/include/")
-
 INCLUDE_DIRECTORIES("${CMAKE_CURRENT_SOURCE_DIR}/../kernel/include/board/rpi0/")
 ADD_DEFINITIONS(-DRPI0)
 
@@ -38,8 +36,6 @@ ADD_USERSPACE_EXECUTABLE(init_task init_task/main.cpp)
 
 # volitelne tasky pro ruzne ulohy
 ADD_USERSPACE_EXECUTABLE(sos_task sos_task/main.cpp)
-ADD_USERSPACE_EXECUTABLE(oled_task oled_task/main.cpp)
 ADD_USERSPACE_EXECUTABLE(logger_task logger_task/main.cpp)
-ADD_USERSPACE_EXECUTABLE(counter_task counter_task/main.cpp)
-ADD_USERSPACE_EXECUTABLE(tilt_task tilt_task/main.cpp)
-ADD_USERSPACE_EXECUTABLE(hello_task hello_task/main.cpp)
+ADD_USERSPACE_EXECUTABLE(master_task master_task/main.cpp)
+ADD_USERSPACE_EXECUTABLE(slave_task slave_task/main.cpp)

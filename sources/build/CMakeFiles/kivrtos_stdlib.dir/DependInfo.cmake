@@ -11,7 +11,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp" "CMakeFiles/kivrtos_stdlib.dir/stdlib/src/stdfile.cpp.obj" "gcc" "CMakeFiles/kivrtos_stdlib.dir/stdlib/src/stdfile.cpp.obj.d"
   "/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdmutex.cpp" "CMakeFiles/kivrtos_stdlib.dir/stdlib/src/stdmutex.cpp.obj" "gcc" "CMakeFiles/kivrtos_stdlib.dir/stdlib/src/stdmutex.cpp.obj.d"
   "/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdstring.cpp" "CMakeFiles/kivrtos_stdlib.dir/stdlib/src/stdstring.cpp.obj" "gcc" "CMakeFiles/kivrtos_stdlib.dir/stdlib/src/stdstring.cpp.obj.d"
-  "/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdutils/src/oled.cpp" "CMakeFiles/kivrtos_stdlib.dir/stdutils/src/oled.cpp.obj" "gcc" "CMakeFiles/kivrtos_stdlib.dir/stdutils/src/oled.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -125,33 +125,33 @@ CMakeFiles/kernel.dir/kernel/src/drivers/i2c.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kernel.dir/kernel/src/drivers/i2c.cpp.s"
 	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/src/drivers/i2c.cpp -o CMakeFiles/kernel.dir/kernel/src/drivers/i2c.cpp.s
 
-CMakeFiles/kernel.dir/kernel/src/drivers/oled_ssd1306.cpp.obj: CMakeFiles/kernel.dir/flags.make
-CMakeFiles/kernel.dir/kernel/src/drivers/oled_ssd1306.cpp.obj: /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/src/drivers/oled_ssd1306.cpp
-CMakeFiles/kernel.dir/kernel/src/drivers/oled_ssd1306.cpp.obj: CMakeFiles/kernel.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/kernel.dir/kernel/src/drivers/oled_ssd1306.cpp.obj"
-	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kernel.dir/kernel/src/drivers/oled_ssd1306.cpp.obj -MF CMakeFiles/kernel.dir/kernel/src/drivers/oled_ssd1306.cpp.obj.d -o CMakeFiles/kernel.dir/kernel/src/drivers/oled_ssd1306.cpp.obj -c /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/src/drivers/oled_ssd1306.cpp
+CMakeFiles/kernel.dir/kernel/src/drivers/i2c_master.cpp.obj: CMakeFiles/kernel.dir/flags.make
+CMakeFiles/kernel.dir/kernel/src/drivers/i2c_master.cpp.obj: /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/src/drivers/i2c_master.cpp
+CMakeFiles/kernel.dir/kernel/src/drivers/i2c_master.cpp.obj: CMakeFiles/kernel.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/kernel.dir/kernel/src/drivers/i2c_master.cpp.obj"
+	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kernel.dir/kernel/src/drivers/i2c_master.cpp.obj -MF CMakeFiles/kernel.dir/kernel/src/drivers/i2c_master.cpp.obj.d -o CMakeFiles/kernel.dir/kernel/src/drivers/i2c_master.cpp.obj -c /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/src/drivers/i2c_master.cpp
 
-CMakeFiles/kernel.dir/kernel/src/drivers/oled_ssd1306.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kernel.dir/kernel/src/drivers/oled_ssd1306.cpp.i"
-	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/src/drivers/oled_ssd1306.cpp > CMakeFiles/kernel.dir/kernel/src/drivers/oled_ssd1306.cpp.i
+CMakeFiles/kernel.dir/kernel/src/drivers/i2c_master.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kernel.dir/kernel/src/drivers/i2c_master.cpp.i"
+	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/src/drivers/i2c_master.cpp > CMakeFiles/kernel.dir/kernel/src/drivers/i2c_master.cpp.i
 
-CMakeFiles/kernel.dir/kernel/src/drivers/oled_ssd1306.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kernel.dir/kernel/src/drivers/oled_ssd1306.cpp.s"
-	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/src/drivers/oled_ssd1306.cpp -o CMakeFiles/kernel.dir/kernel/src/drivers/oled_ssd1306.cpp.s
+CMakeFiles/kernel.dir/kernel/src/drivers/i2c_master.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kernel.dir/kernel/src/drivers/i2c_master.cpp.s"
+	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/src/drivers/i2c_master.cpp -o CMakeFiles/kernel.dir/kernel/src/drivers/i2c_master.cpp.s
 
-CMakeFiles/kernel.dir/kernel/src/drivers/segmentdisplay.cpp.obj: CMakeFiles/kernel.dir/flags.make
-CMakeFiles/kernel.dir/kernel/src/drivers/segmentdisplay.cpp.obj: /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/src/drivers/segmentdisplay.cpp
-CMakeFiles/kernel.dir/kernel/src/drivers/segmentdisplay.cpp.obj: CMakeFiles/kernel.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/kernel.dir/kernel/src/drivers/segmentdisplay.cpp.obj"
-	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kernel.dir/kernel/src/drivers/segmentdisplay.cpp.obj -MF CMakeFiles/kernel.dir/kernel/src/drivers/segmentdisplay.cpp.obj.d -o CMakeFiles/kernel.dir/kernel/src/drivers/segmentdisplay.cpp.obj -c /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/src/drivers/segmentdisplay.cpp
+CMakeFiles/kernel.dir/kernel/src/drivers/i2c_slave.cpp.obj: CMakeFiles/kernel.dir/flags.make
+CMakeFiles/kernel.dir/kernel/src/drivers/i2c_slave.cpp.obj: /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/src/drivers/i2c_slave.cpp
+CMakeFiles/kernel.dir/kernel/src/drivers/i2c_slave.cpp.obj: CMakeFiles/kernel.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/kernel.dir/kernel/src/drivers/i2c_slave.cpp.obj"
+	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kernel.dir/kernel/src/drivers/i2c_slave.cpp.obj -MF CMakeFiles/kernel.dir/kernel/src/drivers/i2c_slave.cpp.obj.d -o CMakeFiles/kernel.dir/kernel/src/drivers/i2c_slave.cpp.obj -c /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/src/drivers/i2c_slave.cpp
 
-CMakeFiles/kernel.dir/kernel/src/drivers/segmentdisplay.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kernel.dir/kernel/src/drivers/segmentdisplay.cpp.i"
-	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/src/drivers/segmentdisplay.cpp > CMakeFiles/kernel.dir/kernel/src/drivers/segmentdisplay.cpp.i
+CMakeFiles/kernel.dir/kernel/src/drivers/i2c_slave.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kernel.dir/kernel/src/drivers/i2c_slave.cpp.i"
+	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/src/drivers/i2c_slave.cpp > CMakeFiles/kernel.dir/kernel/src/drivers/i2c_slave.cpp.i
 
-CMakeFiles/kernel.dir/kernel/src/drivers/segmentdisplay.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kernel.dir/kernel/src/drivers/segmentdisplay.cpp.s"
-	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/src/drivers/segmentdisplay.cpp -o CMakeFiles/kernel.dir/kernel/src/drivers/segmentdisplay.cpp.s
+CMakeFiles/kernel.dir/kernel/src/drivers/i2c_slave.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kernel.dir/kernel/src/drivers/i2c_slave.cpp.s"
+	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/src/drivers/i2c_slave.cpp -o CMakeFiles/kernel.dir/kernel/src/drivers/i2c_slave.cpp.s
 
 CMakeFiles/kernel.dir/kernel/src/drivers/shiftregister.cpp.obj: CMakeFiles/kernel.dir/flags.make
 CMakeFiles/kernel.dir/kernel/src/drivers/shiftregister.cpp.obj: /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/src/drivers/shiftregister.cpp
@@ -532,8 +532,8 @@ kernel_OBJECTS = \
 "CMakeFiles/kernel.dir/kernel/src/drivers/bcm_aux.cpp.obj" \
 "CMakeFiles/kernel.dir/kernel/src/drivers/gpio.cpp.obj" \
 "CMakeFiles/kernel.dir/kernel/src/drivers/i2c.cpp.obj" \
-"CMakeFiles/kernel.dir/kernel/src/drivers/oled_ssd1306.cpp.obj" \
-"CMakeFiles/kernel.dir/kernel/src/drivers/segmentdisplay.cpp.obj" \
+"CMakeFiles/kernel.dir/kernel/src/drivers/i2c_master.cpp.obj" \
+"CMakeFiles/kernel.dir/kernel/src/drivers/i2c_slave.cpp.obj" \
 "CMakeFiles/kernel.dir/kernel/src/drivers/shiftregister.cpp.obj" \
 "CMakeFiles/kernel.dir/kernel/src/drivers/timer.cpp.obj" \
 "CMakeFiles/kernel.dir/kernel/src/drivers/trng.cpp.obj" \
@@ -569,8 +569,8 @@ kernel: CMakeFiles/kernel.dir/kernel/src/cxx.cpp.obj
 kernel: CMakeFiles/kernel.dir/kernel/src/drivers/bcm_aux.cpp.obj
 kernel: CMakeFiles/kernel.dir/kernel/src/drivers/gpio.cpp.obj
 kernel: CMakeFiles/kernel.dir/kernel/src/drivers/i2c.cpp.obj
-kernel: CMakeFiles/kernel.dir/kernel/src/drivers/oled_ssd1306.cpp.obj
-kernel: CMakeFiles/kernel.dir/kernel/src/drivers/segmentdisplay.cpp.obj
+kernel: CMakeFiles/kernel.dir/kernel/src/drivers/i2c_master.cpp.obj
+kernel: CMakeFiles/kernel.dir/kernel/src/drivers/i2c_slave.cpp.obj
 kernel: CMakeFiles/kernel.dir/kernel/src/drivers/shiftregister.cpp.obj
 kernel: CMakeFiles/kernel.dir/kernel/src/drivers/timer.cpp.obj
 kernel: CMakeFiles/kernel.dir/kernel/src/drivers/trng.cpp.obj

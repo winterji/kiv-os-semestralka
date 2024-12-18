@@ -143,19 +143,6 @@ sos_task/fast:
 .PHONY : sos_task/fast
 
 #=============================================================================
-# Target rules for targets named oled_task
-
-# Build rule for target.
-oled_task: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 oled_task
-.PHONY : oled_task
-
-# fast build rule for target.
-oled_task/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oled_task.dir/build.make CMakeFiles/oled_task.dir/build
-.PHONY : oled_task/fast
-
-#=============================================================================
 # Target rules for targets named logger_task
 
 # Build rule for target.
@@ -169,67 +156,30 @@ logger_task/fast:
 .PHONY : logger_task/fast
 
 #=============================================================================
-# Target rules for targets named counter_task
+# Target rules for targets named master_task
 
 # Build rule for target.
-counter_task: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 counter_task
-.PHONY : counter_task
+master_task: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 master_task
+.PHONY : master_task
 
 # fast build rule for target.
-counter_task/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/counter_task.dir/build.make CMakeFiles/counter_task.dir/build
-.PHONY : counter_task/fast
+master_task/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/master_task.dir/build.make CMakeFiles/master_task.dir/build
+.PHONY : master_task/fast
 
 #=============================================================================
-# Target rules for targets named tilt_task
+# Target rules for targets named slave_task
 
 # Build rule for target.
-tilt_task: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tilt_task
-.PHONY : tilt_task
+slave_task: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 slave_task
+.PHONY : slave_task
 
 # fast build rule for target.
-tilt_task/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tilt_task.dir/build.make CMakeFiles/tilt_task.dir/build
-.PHONY : tilt_task/fast
-
-#=============================================================================
-# Target rules for targets named hello_task
-
-# Build rule for target.
-hello_task: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hello_task
-.PHONY : hello_task
-
-# fast build rule for target.
-hello_task/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_task.dir/build.make CMakeFiles/hello_task.dir/build
-.PHONY : hello_task/fast
-
-counter_task/main.obj: counter_task/main.cpp.obj
-.PHONY : counter_task/main.obj
-
-# target to build an object file
-counter_task/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/counter_task.dir/build.make CMakeFiles/counter_task.dir/counter_task/main.cpp.obj
-.PHONY : counter_task/main.cpp.obj
-
-counter_task/main.i: counter_task/main.cpp.i
-.PHONY : counter_task/main.i
-
-# target to preprocess a source file
-counter_task/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/counter_task.dir/build.make CMakeFiles/counter_task.dir/counter_task/main.cpp.i
-.PHONY : counter_task/main.cpp.i
-
-counter_task/main.s: counter_task/main.cpp.s
-.PHONY : counter_task/main.s
-
-# target to generate assembly for a file
-counter_task/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/counter_task.dir/build.make CMakeFiles/counter_task.dir/counter_task/main.cpp.s
-.PHONY : counter_task/main.cpp.s
+slave_task/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/slave_task.dir/build.make CMakeFiles/slave_task.dir/build
+.PHONY : slave_task/fast
 
 crt0.obj: crt0.c.obj
 .PHONY : crt0.obj
@@ -238,11 +188,9 @@ crt0.obj: crt0.c.obj
 crt0.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/init_task.dir/build.make CMakeFiles/init_task.dir/crt0.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sos_task.dir/build.make CMakeFiles/sos_task.dir/crt0.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oled_task.dir/build.make CMakeFiles/oled_task.dir/crt0.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logger_task.dir/build.make CMakeFiles/logger_task.dir/crt0.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/counter_task.dir/build.make CMakeFiles/counter_task.dir/crt0.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tilt_task.dir/build.make CMakeFiles/tilt_task.dir/crt0.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_task.dir/build.make CMakeFiles/hello_task.dir/crt0.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/master_task.dir/build.make CMakeFiles/master_task.dir/crt0.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/slave_task.dir/build.make CMakeFiles/slave_task.dir/crt0.c.obj
 .PHONY : crt0.c.obj
 
 crt0.i: crt0.c.i
@@ -252,11 +200,9 @@ crt0.i: crt0.c.i
 crt0.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/init_task.dir/build.make CMakeFiles/init_task.dir/crt0.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sos_task.dir/build.make CMakeFiles/sos_task.dir/crt0.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oled_task.dir/build.make CMakeFiles/oled_task.dir/crt0.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logger_task.dir/build.make CMakeFiles/logger_task.dir/crt0.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/counter_task.dir/build.make CMakeFiles/counter_task.dir/crt0.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tilt_task.dir/build.make CMakeFiles/tilt_task.dir/crt0.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_task.dir/build.make CMakeFiles/hello_task.dir/crt0.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/master_task.dir/build.make CMakeFiles/master_task.dir/crt0.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/slave_task.dir/build.make CMakeFiles/slave_task.dir/crt0.c.i
 .PHONY : crt0.c.i
 
 crt0.s: crt0.c.s
@@ -266,11 +212,9 @@ crt0.s: crt0.c.s
 crt0.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/init_task.dir/build.make CMakeFiles/init_task.dir/crt0.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sos_task.dir/build.make CMakeFiles/sos_task.dir/crt0.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oled_task.dir/build.make CMakeFiles/oled_task.dir/crt0.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logger_task.dir/build.make CMakeFiles/logger_task.dir/crt0.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/counter_task.dir/build.make CMakeFiles/counter_task.dir/crt0.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tilt_task.dir/build.make CMakeFiles/tilt_task.dir/crt0.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_task.dir/build.make CMakeFiles/hello_task.dir/crt0.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/master_task.dir/build.make CMakeFiles/master_task.dir/crt0.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/slave_task.dir/build.make CMakeFiles/slave_task.dir/crt0.c.s
 .PHONY : crt0.c.s
 
 crt0.obj: crt0.s.obj
@@ -280,11 +224,9 @@ crt0.obj: crt0.s.obj
 crt0.s.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/init_task.dir/build.make CMakeFiles/init_task.dir/crt0.s.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sos_task.dir/build.make CMakeFiles/sos_task.dir/crt0.s.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oled_task.dir/build.make CMakeFiles/oled_task.dir/crt0.s.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logger_task.dir/build.make CMakeFiles/logger_task.dir/crt0.s.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/counter_task.dir/build.make CMakeFiles/counter_task.dir/crt0.s.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tilt_task.dir/build.make CMakeFiles/tilt_task.dir/crt0.s.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_task.dir/build.make CMakeFiles/hello_task.dir/crt0.s.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/master_task.dir/build.make CMakeFiles/master_task.dir/crt0.s.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/slave_task.dir/build.make CMakeFiles/slave_task.dir/crt0.s.obj
 .PHONY : crt0.s.obj
 
 cxxabi.obj: cxxabi.cpp.obj
@@ -294,11 +236,9 @@ cxxabi.obj: cxxabi.cpp.obj
 cxxabi.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/init_task.dir/build.make CMakeFiles/init_task.dir/cxxabi.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sos_task.dir/build.make CMakeFiles/sos_task.dir/cxxabi.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oled_task.dir/build.make CMakeFiles/oled_task.dir/cxxabi.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logger_task.dir/build.make CMakeFiles/logger_task.dir/cxxabi.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/counter_task.dir/build.make CMakeFiles/counter_task.dir/cxxabi.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tilt_task.dir/build.make CMakeFiles/tilt_task.dir/cxxabi.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_task.dir/build.make CMakeFiles/hello_task.dir/cxxabi.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/master_task.dir/build.make CMakeFiles/master_task.dir/cxxabi.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/slave_task.dir/build.make CMakeFiles/slave_task.dir/cxxabi.cpp.obj
 .PHONY : cxxabi.cpp.obj
 
 cxxabi.i: cxxabi.cpp.i
@@ -308,11 +248,9 @@ cxxabi.i: cxxabi.cpp.i
 cxxabi.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/init_task.dir/build.make CMakeFiles/init_task.dir/cxxabi.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sos_task.dir/build.make CMakeFiles/sos_task.dir/cxxabi.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oled_task.dir/build.make CMakeFiles/oled_task.dir/cxxabi.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logger_task.dir/build.make CMakeFiles/logger_task.dir/cxxabi.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/counter_task.dir/build.make CMakeFiles/counter_task.dir/cxxabi.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tilt_task.dir/build.make CMakeFiles/tilt_task.dir/cxxabi.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_task.dir/build.make CMakeFiles/hello_task.dir/cxxabi.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/master_task.dir/build.make CMakeFiles/master_task.dir/cxxabi.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/slave_task.dir/build.make CMakeFiles/slave_task.dir/cxxabi.cpp.i
 .PHONY : cxxabi.cpp.i
 
 cxxabi.s: cxxabi.cpp.s
@@ -322,36 +260,10 @@ cxxabi.s: cxxabi.cpp.s
 cxxabi.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/init_task.dir/build.make CMakeFiles/init_task.dir/cxxabi.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sos_task.dir/build.make CMakeFiles/sos_task.dir/cxxabi.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oled_task.dir/build.make CMakeFiles/oled_task.dir/cxxabi.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logger_task.dir/build.make CMakeFiles/logger_task.dir/cxxabi.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/counter_task.dir/build.make CMakeFiles/counter_task.dir/cxxabi.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tilt_task.dir/build.make CMakeFiles/tilt_task.dir/cxxabi.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_task.dir/build.make CMakeFiles/hello_task.dir/cxxabi.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/master_task.dir/build.make CMakeFiles/master_task.dir/cxxabi.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/slave_task.dir/build.make CMakeFiles/slave_task.dir/cxxabi.cpp.s
 .PHONY : cxxabi.cpp.s
-
-hello_task/main.obj: hello_task/main.cpp.obj
-.PHONY : hello_task/main.obj
-
-# target to build an object file
-hello_task/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_task.dir/build.make CMakeFiles/hello_task.dir/hello_task/main.cpp.obj
-.PHONY : hello_task/main.cpp.obj
-
-hello_task/main.i: hello_task/main.cpp.i
-.PHONY : hello_task/main.i
-
-# target to preprocess a source file
-hello_task/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_task.dir/build.make CMakeFiles/hello_task.dir/hello_task/main.cpp.i
-.PHONY : hello_task/main.cpp.i
-
-hello_task/main.s: hello_task/main.cpp.s
-.PHONY : hello_task/main.s
-
-# target to generate assembly for a file
-hello_task/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_task.dir/build.make CMakeFiles/hello_task.dir/hello_task/main.cpp.s
-.PHONY : hello_task/main.cpp.s
 
 init_task/main.obj: init_task/main.cpp.obj
 .PHONY : init_task/main.obj
@@ -401,29 +313,53 @@ logger_task/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logger_task.dir/build.make CMakeFiles/logger_task.dir/logger_task/main.cpp.s
 .PHONY : logger_task/main.cpp.s
 
-oled_task/main.obj: oled_task/main.cpp.obj
-.PHONY : oled_task/main.obj
+master_task/main.obj: master_task/main.cpp.obj
+.PHONY : master_task/main.obj
 
 # target to build an object file
-oled_task/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oled_task.dir/build.make CMakeFiles/oled_task.dir/oled_task/main.cpp.obj
-.PHONY : oled_task/main.cpp.obj
+master_task/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/master_task.dir/build.make CMakeFiles/master_task.dir/master_task/main.cpp.obj
+.PHONY : master_task/main.cpp.obj
 
-oled_task/main.i: oled_task/main.cpp.i
-.PHONY : oled_task/main.i
+master_task/main.i: master_task/main.cpp.i
+.PHONY : master_task/main.i
 
 # target to preprocess a source file
-oled_task/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oled_task.dir/build.make CMakeFiles/oled_task.dir/oled_task/main.cpp.i
-.PHONY : oled_task/main.cpp.i
+master_task/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/master_task.dir/build.make CMakeFiles/master_task.dir/master_task/main.cpp.i
+.PHONY : master_task/main.cpp.i
 
-oled_task/main.s: oled_task/main.cpp.s
-.PHONY : oled_task/main.s
+master_task/main.s: master_task/main.cpp.s
+.PHONY : master_task/main.s
 
 # target to generate assembly for a file
-oled_task/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oled_task.dir/build.make CMakeFiles/oled_task.dir/oled_task/main.cpp.s
-.PHONY : oled_task/main.cpp.s
+master_task/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/master_task.dir/build.make CMakeFiles/master_task.dir/master_task/main.cpp.s
+.PHONY : master_task/main.cpp.s
+
+slave_task/main.obj: slave_task/main.cpp.obj
+.PHONY : slave_task/main.obj
+
+# target to build an object file
+slave_task/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/slave_task.dir/build.make CMakeFiles/slave_task.dir/slave_task/main.cpp.obj
+.PHONY : slave_task/main.cpp.obj
+
+slave_task/main.i: slave_task/main.cpp.i
+.PHONY : slave_task/main.i
+
+# target to preprocess a source file
+slave_task/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/slave_task.dir/build.make CMakeFiles/slave_task.dir/slave_task/main.cpp.i
+.PHONY : slave_task/main.cpp.i
+
+slave_task/main.s: slave_task/main.cpp.s
+.PHONY : slave_task/main.s
+
+# target to generate assembly for a file
+slave_task/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/slave_task.dir/build.make CMakeFiles/slave_task.dir/slave_task/main.cpp.s
+.PHONY : slave_task/main.cpp.s
 
 sos_task/main.obj: sos_task/main.cpp.obj
 .PHONY : sos_task/main.obj
@@ -449,30 +385,6 @@ sos_task/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sos_task.dir/build.make CMakeFiles/sos_task.dir/sos_task/main.cpp.s
 .PHONY : sos_task/main.cpp.s
 
-tilt_task/main.obj: tilt_task/main.cpp.obj
-.PHONY : tilt_task/main.obj
-
-# target to build an object file
-tilt_task/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tilt_task.dir/build.make CMakeFiles/tilt_task.dir/tilt_task/main.cpp.obj
-.PHONY : tilt_task/main.cpp.obj
-
-tilt_task/main.i: tilt_task/main.cpp.i
-.PHONY : tilt_task/main.i
-
-# target to preprocess a source file
-tilt_task/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tilt_task.dir/build.make CMakeFiles/tilt_task.dir/tilt_task/main.cpp.i
-.PHONY : tilt_task/main.cpp.i
-
-tilt_task/main.s: tilt_task/main.cpp.s
-.PHONY : tilt_task/main.s
-
-# target to generate assembly for a file
-tilt_task/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tilt_task.dir/build.make CMakeFiles/tilt_task.dir/tilt_task/main.cpp.s
-.PHONY : tilt_task/main.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -481,16 +393,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... counter_task"
-	@echo "... hello_task"
 	@echo "... init_task"
 	@echo "... logger_task"
-	@echo "... oled_task"
+	@echo "... master_task"
+	@echo "... slave_task"
 	@echo "... sos_task"
-	@echo "... tilt_task"
-	@echo "... counter_task/main.obj"
-	@echo "... counter_task/main.i"
-	@echo "... counter_task/main.s"
 	@echo "... crt0.obj"
 	@echo "... crt0.i"
 	@echo "... crt0.s"
@@ -498,24 +405,21 @@ help:
 	@echo "... cxxabi.obj"
 	@echo "... cxxabi.i"
 	@echo "... cxxabi.s"
-	@echo "... hello_task/main.obj"
-	@echo "... hello_task/main.i"
-	@echo "... hello_task/main.s"
 	@echo "... init_task/main.obj"
 	@echo "... init_task/main.i"
 	@echo "... init_task/main.s"
 	@echo "... logger_task/main.obj"
 	@echo "... logger_task/main.i"
 	@echo "... logger_task/main.s"
-	@echo "... oled_task/main.obj"
-	@echo "... oled_task/main.i"
-	@echo "... oled_task/main.s"
+	@echo "... master_task/main.obj"
+	@echo "... master_task/main.i"
+	@echo "... master_task/main.s"
+	@echo "... slave_task/main.obj"
+	@echo "... slave_task/main.i"
+	@echo "... slave_task/main.s"
 	@echo "... sos_task/main.obj"
 	@echo "... sos_task/main.i"
 	@echo "... sos_task/main.s"
-	@echo "... tilt_task/main.obj"
-	@echo "... tilt_task/main.i"
-	@echo "... tilt_task/main.s"
 .PHONY : help
 
 

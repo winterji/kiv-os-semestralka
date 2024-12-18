@@ -5,8 +5,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/kivrtos_stdlib.dir/stdlib/src/stdmutex.cpp.obj.d"
   "CMakeFiles/kivrtos_stdlib.dir/stdlib/src/stdstring.cpp.obj"
   "CMakeFiles/kivrtos_stdlib.dir/stdlib/src/stdstring.cpp.obj.d"
-  "CMakeFiles/kivrtos_stdlib.dir/stdutils/src/oled.cpp.obj"
-  "CMakeFiles/kivrtos_stdlib.dir/stdutils/src/oled.cpp.obj.d"
   "libkivrtos_stdlib.a"
   "libkivrtos_stdlib.pdb"
 )

@@ -1,7 +1,6 @@
 #include <drivers/gpio.h>
 #include <drivers/uart.h>
 #include <drivers/timer.h>
-#include <drivers/oled_ssd1306.h>
 #include <interrupt_controller.h>
 
 #include <memory/memmap.h>
@@ -19,43 +18,54 @@ extern "C" void Timer_Callback()
 	sProcessMgr.Schedule();
 }
 
+// extern void Process_I2C();
+
 extern "C" unsigned char __init_task[];
 extern "C" unsigned int __init_task_len;
 
 extern "C" unsigned char __sos_task[];
 extern "C" unsigned int __sos_task_len;
 
-extern "C" unsigned char __oled_task[];
-extern "C" unsigned int __oled_task_len;
-
 extern "C" unsigned char __logger_task[];
 extern "C" unsigned int __logger_task_len;
 
-extern "C" unsigned char __counter_task[];
-extern "C" unsigned int __counter_task_len;
+extern "C" unsigned char __master_task[];
+extern "C" unsigned int __master_task_len;
 
-extern "C" unsigned char __tilt_task[];
-extern "C" unsigned int __tilt_task_len;
-
-extern "C" unsigned char __hello_task[];
-extern "C" unsigned int __hello_task_len;
+extern "C" unsigned char __slave_task[];
+extern "C" unsigned int __slave_task_len;
 
 extern "C" int _kernel_main(void)
 {
 	// inicializace souboroveho systemu
 	sFilesystem.Initialize();
 
+	sUART0.Open();
+	sUART0.Set_Baud_Rate(NUART_Baud_Rate::BR_115200);
+	sUART0.Set_Char_Length(NUART_Char_Length::Char_8);
+	volatile unsigned int tim;
+	char buf[8];
+	for(int i = 3; i > 0; i--) {
+		itoa(i, buf, 10);
+		sUART0.Write(buf);
+		sUART0.Write("\r\n");
+		for(tim = 0; tim < 5000000; tim++)
+			;
+	}
+	sUART0.Write("Kernel started...\n", 18);
+	sUART0.Close();
+
 	// vytvoreni hlavniho systemoveho (idle) procesu
 	sProcessMgr.Create_Process(__init_task, __init_task_len, true);
 
 	// vytvoreni vsech tasku
 	// TODO: presunuti do init procesu a nejake inicializacni sekce
-	// sProcessMgr.Create_Process(__sos_task, __sos_task_len, false);
-	// sProcessMgr.Create_Process(__oled_task, __oled_task_len, false);
-	// sProcessMgr.Create_Process(__logger_task, __logger_task_len, false);
-	// sProcessMgr.Create_Process(__counter_task, __counter_task_len, false);
-	// sProcessMgr.Create_Process(__tilt_task, __tilt_task_len, false);
-	sProcessMgr.Create_Process(__hello_task, __hello_task_len, false);
+	sProcessMgr.Create_Process(__logger_task, __logger_task_len, false);
+
+	sProcessMgr.Create_Process(__master_task, __master_task_len, false);
+	sProcessMgr.Create_Process(__slave_task, __slave_task_len, false);
+	// sProcessMgr.Create_Process(reinterpret_cast<unsigned long>(&Process_I2C));
+
 
 	// zatim zakazeme IRQ casovace
 	sInterruptCtl.Disable_Basic_IRQ(hal::IRQ_Basic_Source::Timer);
