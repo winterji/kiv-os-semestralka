@@ -1,2 +1,2 @@
-sources/build/
-sources/userspace/build/
+sources/build/*
+sources/userspace/build/*
