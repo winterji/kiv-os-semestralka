@@ -30,7 +30,6 @@ uint32_t open(const char* filename, NFile_Open_Mode mode)
     asm volatile("mov r1, %0" : : "r" (mode));
     asm volatile("swi 64");
     asm volatile("mov %0, r0" : "=r" (file));
-
     return file;
 }
 

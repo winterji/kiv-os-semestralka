@@ -7,4 +7,7 @@ CMakeFiles/kernel.dir/kernel/src/drivers/i2c.cpp.obj: \
  /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/include/fs/filesystem.h \
  /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/include/process/swi.h \
  /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/include/process/spinlock.h \
- /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/include/drivers/bridges/i2c_defs.h
+ /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/include/drivers/bridges/i2c_defs.h \
+ /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/include/stdfile.h \
+ /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/include/process/process_manager.h \
+ /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/include/process/process.h

@@ -606,11 +606,10 @@ uint32_t open(const char* filename, NFile_Open_Mode mode)
     asm volatile("mov %0, r0" : "=r" (file));
     8448:	e1a03000 	mov	r3, r0
     844c:	e50b3008 	str	r3, [fp, #-8]
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:34
-
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:33
     return file;
     8450:	e51b3008 	ldr	r3, [fp, #-8]
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:35
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:34
 }
     8454:	e1a00003 	mov	r0, r3
     8458:	e28bd000 	add	sp, fp, #0
@@ -619,7 +618,7 @@ uint32_t open(const char* filename, NFile_Open_Mode mode)
 
 00008464 <_Z4readjPcj>:
 _Z4readjPcj():
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:38
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:37
 
 uint32_t read(uint32_t file, char* const buffer, uint32_t size)
 {
@@ -629,32 +628,32 @@ uint32_t read(uint32_t file, char* const buffer, uint32_t size)
     8470:	e50b0010 	str	r0, [fp, #-16]
     8474:	e50b1014 	str	r1, [fp, #-20]	; 0xffffffec
     8478:	e50b2018 	str	r2, [fp, #-24]	; 0xffffffe8
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:41
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:40
     uint32_t rdnum;
 
     asm volatile("mov r0, %0" : : "r" (file));
     847c:	e51b3010 	ldr	r3, [fp, #-16]
     8480:	e1a00003 	mov	r0, r3
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:42
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:41
     asm volatile("mov r1, %0" : : "r" (buffer));
     8484:	e51b3014 	ldr	r3, [fp, #-20]	; 0xffffffec
     8488:	e1a01003 	mov	r1, r3
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:43
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:42
     asm volatile("mov r2, %0" : : "r" (size));
     848c:	e51b3018 	ldr	r3, [fp, #-24]	; 0xffffffe8
     8490:	e1a02003 	mov	r2, r3
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:44
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:43
     asm volatile("swi 65");
     8494:	ef000041 	svc	0x00000041
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:45
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:44
     asm volatile("mov %0, r0" : "=r" (rdnum));
     8498:	e1a03000 	mov	r3, r0
     849c:	e50b3008 	str	r3, [fp, #-8]
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:47
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:46
 
     return rdnum;
     84a0:	e51b3008 	ldr	r3, [fp, #-8]
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:48
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:47
 }
     84a4:	e1a00003 	mov	r0, r3
     84a8:	e28bd000 	add	sp, fp, #0
@@ -663,7 +662,7 @@ uint32_t read(uint32_t file, char* const buffer, uint32_t size)
 
 000084b4 <_Z5writejPKcj>:
 _Z5writejPKcj():
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:51
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:50
 
 uint32_t write(uint32_t file, const char* buffer, uint32_t size)
 {
@@ -673,32 +672,32 @@ uint32_t write(uint32_t file, const char* buffer, uint32_t size)
     84c0:	e50b0010 	str	r0, [fp, #-16]
     84c4:	e50b1014 	str	r1, [fp, #-20]	; 0xffffffec
     84c8:	e50b2018 	str	r2, [fp, #-24]	; 0xffffffe8
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:54
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:53
     uint32_t wrnum;
 
     asm volatile("mov r0, %0" : : "r" (file));
     84cc:	e51b3010 	ldr	r3, [fp, #-16]
     84d0:	e1a00003 	mov	r0, r3
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:55
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:54
     asm volatile("mov r1, %0" : : "r" (buffer));
     84d4:	e51b3014 	ldr	r3, [fp, #-20]	; 0xffffffec
     84d8:	e1a01003 	mov	r1, r3
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:56
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:55
     asm volatile("mov r2, %0" : : "r" (size));
     84dc:	e51b3018 	ldr	r3, [fp, #-24]	; 0xffffffe8
     84e0:	e1a02003 	mov	r2, r3
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:57
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:56
     asm volatile("swi 66");
     84e4:	ef000042 	svc	0x00000042
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:58
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:57
     asm volatile("mov %0, r0" : "=r" (wrnum));
     84e8:	e1a03000 	mov	r3, r0
     84ec:	e50b3008 	str	r3, [fp, #-8]
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:60
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:59
 
     return wrnum;
     84f0:	e51b3008 	ldr	r3, [fp, #-8]
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:61
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:60
 }
     84f4:	e1a00003 	mov	r0, r3
     84f8:	e28bd000 	add	sp, fp, #0
@@ -707,7 +706,7 @@ uint32_t write(uint32_t file, const char* buffer, uint32_t size)
 
 00008504 <_Z5closej>:
 _Z5closej():
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:64
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:63
 
 void close(uint32_t file)
 {
@@ -715,14 +714,14 @@ void close(uint32_t file)
     8508:	e28db000 	add	fp, sp, #0
     850c:	e24dd00c 	sub	sp, sp, #12
     8510:	e50b0008 	str	r0, [fp, #-8]
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:65
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:64
     asm volatile("mov r0, %0" : : "r" (file));
     8514:	e51b3008 	ldr	r3, [fp, #-8]
     8518:	e1a00003 	mov	r0, r3
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:66
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:65
     asm volatile("swi 67");
     851c:	ef000043 	svc	0x00000043
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:67
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:66
 }
     8520:	e320f000 	nop	{0}
     8524:	e28bd000 	add	sp, fp, #0
@@ -731,7 +730,7 @@ void close(uint32_t file)
 
 00008530 <_Z5ioctlj16NIOCtl_OperationPv>:
 _Z5ioctlj16NIOCtl_OperationPv():
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:70
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:69
 
 uint32_t ioctl(uint32_t file, NIOCtl_Operation operation, void* param)
 {
@@ -741,32 +740,32 @@ uint32_t ioctl(uint32_t file, NIOCtl_Operation operation, void* param)
     853c:	e50b0010 	str	r0, [fp, #-16]
     8540:	e50b1014 	str	r1, [fp, #-20]	; 0xffffffec
     8544:	e50b2018 	str	r2, [fp, #-24]	; 0xffffffe8
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:73
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:72
     uint32_t retcode;
 
     asm volatile("mov r0, %0" : : "r" (file));
     8548:	e51b3010 	ldr	r3, [fp, #-16]
     854c:	e1a00003 	mov	r0, r3
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:74
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:73
     asm volatile("mov r1, %0" : : "r" (operation));
     8550:	e51b3014 	ldr	r3, [fp, #-20]	; 0xffffffec
     8554:	e1a01003 	mov	r1, r3
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:75
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:74
     asm volatile("mov r2, %0" : : "r" (param));
     8558:	e51b3018 	ldr	r3, [fp, #-24]	; 0xffffffe8
     855c:	e1a02003 	mov	r2, r3
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:76
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:75
     asm volatile("swi 68");
     8560:	ef000044 	svc	0x00000044
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:77
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:76
     asm volatile("mov %0, r0" : "=r" (retcode));
     8564:	e1a03000 	mov	r3, r0
     8568:	e50b3008 	str	r3, [fp, #-8]
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:79
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:78
 
     return retcode;
     856c:	e51b3008 	ldr	r3, [fp, #-8]
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:80
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:79
 }
     8570:	e1a00003 	mov	r0, r3
     8574:	e28bd000 	add	sp, fp, #0
@@ -775,7 +774,7 @@ uint32_t ioctl(uint32_t file, NIOCtl_Operation operation, void* param)
 
 00008580 <_Z6notifyjj>:
 _Z6notifyjj():
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:83
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:82
 
 uint32_t notify(uint32_t file, uint32_t count)
 {
@@ -784,28 +783,28 @@ uint32_t notify(uint32_t file, uint32_t count)
     8588:	e24dd014 	sub	sp, sp, #20
     858c:	e50b0010 	str	r0, [fp, #-16]
     8590:	e50b1014 	str	r1, [fp, #-20]	; 0xffffffec
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:86
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:85
     uint32_t retcnt;
 
     asm volatile("mov r0, %0" : : "r" (file));
     8594:	e51b3010 	ldr	r3, [fp, #-16]
     8598:	e1a00003 	mov	r0, r3
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:87
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:86
     asm volatile("mov r1, %0" : : "r" (count));
     859c:	e51b3014 	ldr	r3, [fp, #-20]	; 0xffffffec
     85a0:	e1a01003 	mov	r1, r3
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:88
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:87
     asm volatile("swi 69");
     85a4:	ef000045 	svc	0x00000045
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:89
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:88
     asm volatile("mov %0, r0" : "=r" (retcnt));
     85a8:	e1a03000 	mov	r3, r0
     85ac:	e50b3008 	str	r3, [fp, #-8]
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:91
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:90
 
     return retcnt;
     85b0:	e51b3008 	ldr	r3, [fp, #-8]
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:92
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:91
 }
     85b4:	e1a00003 	mov	r0, r3
     85b8:	e28bd000 	add	sp, fp, #0
@@ -814,7 +813,7 @@ uint32_t notify(uint32_t file, uint32_t count)
 
 000085c4 <_Z4waitjjj>:
 _Z4waitjjj():
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:95
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:94
 
 NSWI_Result_Code wait(uint32_t file, uint32_t count, uint32_t notified_deadline)
 {
@@ -824,32 +823,32 @@ NSWI_Result_Code wait(uint32_t file, uint32_t count, uint32_t notified_deadline)
     85d0:	e50b0010 	str	r0, [fp, #-16]
     85d4:	e50b1014 	str	r1, [fp, #-20]	; 0xffffffec
     85d8:	e50b2018 	str	r2, [fp, #-24]	; 0xffffffe8
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:98
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:97
     NSWI_Result_Code retcode;
 
     asm volatile("mov r0, %0" : : "r" (file));
     85dc:	e51b3010 	ldr	r3, [fp, #-16]
     85e0:	e1a00003 	mov	r0, r3
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:99
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:98
     asm volatile("mov r1, %0" : : "r" (count));
     85e4:	e51b3014 	ldr	r3, [fp, #-20]	; 0xffffffec
     85e8:	e1a01003 	mov	r1, r3
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:100
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:99
     asm volatile("mov r2, %0" : : "r" (notified_deadline));
     85ec:	e51b3018 	ldr	r3, [fp, #-24]	; 0xffffffe8
     85f0:	e1a02003 	mov	r2, r3
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:101
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:100
     asm volatile("swi 70");
     85f4:	ef000046 	svc	0x00000046
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:102
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:101
     asm volatile("mov %0, r0" : "=r" (retcode));
     85f8:	e1a03000 	mov	r3, r0
     85fc:	e50b3008 	str	r3, [fp, #-8]
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:104
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:103
 
     return retcode;
     8600:	e51b3008 	ldr	r3, [fp, #-8]
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:105
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:104
 }
     8604:	e1a00003 	mov	r0, r3
     8608:	e28bd000 	add	sp, fp, #0
@@ -858,7 +857,7 @@ NSWI_Result_Code wait(uint32_t file, uint32_t count, uint32_t notified_deadline)
 
 00008614 <_Z5sleepjj>:
 _Z5sleepjj():
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:108
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:107
 
 bool sleep(uint32_t ticks, uint32_t notified_deadline)
 {
@@ -867,24 +866,24 @@ bool sleep(uint32_t ticks, uint32_t notified_deadline)
     861c:	e24dd014 	sub	sp, sp, #20
     8620:	e50b0010 	str	r0, [fp, #-16]
     8624:	e50b1014 	str	r1, [fp, #-20]	; 0xffffffec
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:111
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:110
     uint32_t retcode;
 
     asm volatile("mov r0, %0" : : "r" (ticks));
     8628:	e51b3010 	ldr	r3, [fp, #-16]
     862c:	e1a00003 	mov	r0, r3
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:112
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:111
     asm volatile("mov r1, %0" : : "r" (notified_deadline));
     8630:	e51b3014 	ldr	r3, [fp, #-20]	; 0xffffffec
     8634:	e1a01003 	mov	r1, r3
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:113
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:112
     asm volatile("swi 3");
     8638:	ef000003 	svc	0x00000003
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:114
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:113
     asm volatile("mov %0, r0" : "=r" (retcode));
     863c:	e1a03000 	mov	r3, r0
     8640:	e50b3008 	str	r3, [fp, #-8]
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:116
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:115
 
     return retcode;
     8644:	e51b3008 	ldr	r3, [fp, #-8]
@@ -892,7 +891,7 @@ bool sleep(uint32_t ticks, uint32_t notified_deadline)
     864c:	13a03001 	movne	r3, #1
     8650:	03a03000 	moveq	r3, #0
     8654:	e6ef3073 	uxtb	r3, r3
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:117
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:116
 }
     8658:	e1a00003 	mov	r0, r3
     865c:	e28bd000 	add	sp, fp, #0
@@ -901,35 +900,35 @@ bool sleep(uint32_t ticks, uint32_t notified_deadline)
 
 00008668 <_Z24get_active_process_countv>:
 _Z24get_active_process_countv():
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:120
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:119
 
 uint32_t get_active_process_count()
 {
     8668:	e52db004 	push	{fp}		; (str fp, [sp, #-4]!)
     866c:	e28db000 	add	fp, sp, #0
     8670:	e24dd00c 	sub	sp, sp, #12
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:121
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:120
     const NGet_Sched_Info_Type req = NGet_Sched_Info_Type::Active_Process_Count;
     8674:	e3a03000 	mov	r3, #0
     8678:	e50b3008 	str	r3, [fp, #-8]
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:124
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:123
     uint32_t retval;
 
     asm volatile("mov r0, %0" : : "r" (req));
     867c:	e3a03000 	mov	r3, #0
     8680:	e1a00003 	mov	r0, r3
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:125
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:124
     asm volatile("mov r1, %0" : : "r" (&retval));
     8684:	e24b300c 	sub	r3, fp, #12
     8688:	e1a01003 	mov	r1, r3
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:126
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:125
     asm volatile("swi 4");
     868c:	ef000004 	svc	0x00000004
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:128
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:127
 
     return retval;
     8690:	e51b300c 	ldr	r3, [fp, #-12]
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:129
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:128
 }
     8694:	e1a00003 	mov	r0, r3
     8698:	e28bd000 	add	sp, fp, #0
@@ -938,35 +937,35 @@ uint32_t get_active_process_count()
 
 000086a4 <_Z14get_tick_countv>:
 _Z14get_tick_countv():
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:132
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:131
 
 uint32_t get_tick_count()
 {
     86a4:	e52db004 	push	{fp}		; (str fp, [sp, #-4]!)
     86a8:	e28db000 	add	fp, sp, #0
     86ac:	e24dd00c 	sub	sp, sp, #12
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:133
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:132
     const NGet_Sched_Info_Type req = NGet_Sched_Info_Type::Tick_Count;
     86b0:	e3a03001 	mov	r3, #1
     86b4:	e50b3008 	str	r3, [fp, #-8]
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:136
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:135
     uint32_t retval;
 
     asm volatile("mov r0, %0" : : "r" (req));
     86b8:	e3a03001 	mov	r3, #1
     86bc:	e1a00003 	mov	r0, r3
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:137
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:136
     asm volatile("mov r1, %0" : : "r" (&retval));
     86c0:	e24b300c 	sub	r3, fp, #12
     86c4:	e1a01003 	mov	r1, r3
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:138
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:137
     asm volatile("swi 4");
     86c8:	ef000004 	svc	0x00000004
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:140
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:139
 
     return retval;
     86cc:	e51b300c 	ldr	r3, [fp, #-12]
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:141
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:140
 }
     86d0:	e1a00003 	mov	r0, r3
     86d4:	e28bd000 	add	sp, fp, #0
@@ -975,7 +974,7 @@ uint32_t get_tick_count()
 
 000086e0 <_Z17set_task_deadlinej>:
 _Z17set_task_deadlinej():
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:144
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:143
 
 void set_task_deadline(uint32_t tick_count_required)
 {
@@ -983,23 +982,23 @@ void set_task_deadline(uint32_t tick_count_required)
     86e4:	e28db000 	add	fp, sp, #0
     86e8:	e24dd014 	sub	sp, sp, #20
     86ec:	e50b0010 	str	r0, [fp, #-16]
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:145
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:144
     const NDeadline_Subservice req = NDeadline_Subservice::Set_Relative;
     86f0:	e3a03000 	mov	r3, #0
     86f4:	e50b3008 	str	r3, [fp, #-8]
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:147
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:146
 
     asm volatile("mov r0, %0" : : "r" (req));
     86f8:	e3a03000 	mov	r3, #0
     86fc:	e1a00003 	mov	r0, r3
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:148
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:147
     asm volatile("mov r1, %0" : : "r" (&tick_count_required));
     8700:	e24b3010 	sub	r3, fp, #16
     8704:	e1a01003 	mov	r1, r3
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:149
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:148
     asm volatile("swi 5");
     8708:	ef000005 	svc	0x00000005
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:150
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:149
 }
     870c:	e320f000 	nop	{0}
     8710:	e28bd000 	add	sp, fp, #0
@@ -1008,35 +1007,35 @@ void set_task_deadline(uint32_t tick_count_required)
 
 0000871c <_Z26get_task_ticks_to_deadlinev>:
 _Z26get_task_ticks_to_deadlinev():
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:153
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:152
 
 uint32_t get_task_ticks_to_deadline()
 {
     871c:	e52db004 	push	{fp}		; (str fp, [sp, #-4]!)
     8720:	e28db000 	add	fp, sp, #0
     8724:	e24dd00c 	sub	sp, sp, #12
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:154
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:153
     const NDeadline_Subservice req = NDeadline_Subservice::Get_Remaining;
     8728:	e3a03001 	mov	r3, #1
     872c:	e50b3008 	str	r3, [fp, #-8]
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:157
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:156
     uint32_t ticks;
 
     asm volatile("mov r0, %0" : : "r" (req));
     8730:	e3a03001 	mov	r3, #1
     8734:	e1a00003 	mov	r0, r3
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:158
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:157
     asm volatile("mov r1, %0" : : "r" (&ticks));
     8738:	e24b300c 	sub	r3, fp, #12
     873c:	e1a01003 	mov	r1, r3
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:159
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:158
     asm volatile("swi 5");
     8740:	ef000005 	svc	0x00000005
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:161
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:160
 
     return ticks;
     8744:	e51b300c 	ldr	r3, [fp, #-12]
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:162
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:161
 }
     8748:	e1a00003 	mov	r0, r3
     874c:	e28bd000 	add	sp, fp, #0
@@ -1045,7 +1044,7 @@ uint32_t get_task_ticks_to_deadline()
 
 00008758 <_Z4pipePKcj>:
 _Z4pipePKcj():
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:167
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:166
 
 const char Pipe_File_Prefix[] = "SYS:pipe/";
 
@@ -1056,7 +1055,7 @@ uint32_t pipe(const char* name, uint32_t buf_size)
     8760:	e24dd050 	sub	sp, sp, #80	; 0x50
     8764:	e50b0050 	str	r0, [fp, #-80]	; 0xffffffb0
     8768:	e50b1054 	str	r1, [fp, #-84]	; 0xffffffac
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:169
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:168
     char fname[64];
     strncpy(fname, Pipe_File_Prefix, sizeof(Pipe_File_Prefix));
     876c:	e24b3048 	sub	r3, fp, #72	; 0x48
@@ -1064,7 +1063,7 @@ uint32_t pipe(const char* name, uint32_t buf_size)
     8774:	e59f1088 	ldr	r1, [pc, #136]	; 8804 <_Z4pipePKcj+0xac>
     8778:	e1a00003 	mov	r0, r3
     877c:	eb0000a5 	bl	8a18 <_Z7strncpyPcPKci>
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:170
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:169
     strncpy(fname + sizeof(Pipe_File_Prefix), name, sizeof(fname) - sizeof(Pipe_File_Prefix) - 1);
     8780:	e24b3048 	sub	r3, fp, #72	; 0x48
     8784:	e283300a 	add	r3, r3, #10
@@ -1072,7 +1071,7 @@ uint32_t pipe(const char* name, uint32_t buf_size)
     878c:	e51b1050 	ldr	r1, [fp, #-80]	; 0xffffffb0
     8790:	e1a00003 	mov	r0, r3
     8794:	eb00009f 	bl	8a18 <_Z7strncpyPcPKci>
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:172
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:171
 
     int ncur = sizeof(Pipe_File_Prefix) + strlen(name);
     8798:	e51b0050 	ldr	r0, [fp, #-80]	; 0xffffffb0
@@ -1080,7 +1079,7 @@ uint32_t pipe(const char* name, uint32_t buf_size)
     87a0:	e1a03000 	mov	r3, r0
     87a4:	e283300a 	add	r3, r3, #10
     87a8:	e50b3008 	str	r3, [fp, #-8]
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:174
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:173
 
     fname[ncur++] = '#';
     87ac:	e51b3008 	ldr	r3, [fp, #-8]
@@ -1090,7 +1089,7 @@ uint32_t pipe(const char* name, uint32_t buf_size)
     87bc:	e083300b 	add	r3, r3, fp
     87c0:	e3a02023 	mov	r2, #35	; 0x23
     87c4:	e5432044 	strb	r2, [r3, #-68]	; 0xffffffbc
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:176
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:175
 
     itoa(buf_size, &fname[ncur], 10);
     87c8:	e24b2048 	sub	r2, fp, #72	; 0x48
@@ -1100,7 +1099,7 @@ uint32_t pipe(const char* name, uint32_t buf_size)
     87d8:	e1a01003 	mov	r1, r3
     87dc:	e51b0054 	ldr	r0, [fp, #-84]	; 0xffffffac
     87e0:	eb000008 	bl	8808 <_Z4itoajPcj>
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:178
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:177
 
     return open(fname, NFile_Open_Mode::Read_Write);
     87e4:	e24b3048 	sub	r3, fp, #72	; 0x48
@@ -1108,7 +1107,7 @@ uint32_t pipe(const char* name, uint32_t buf_size)
     87ec:	e1a00003 	mov	r0, r3
     87f0:	ebffff0a 	bl	8420 <_Z4openPKc15NFile_Open_Mode>
     87f4:	e1a03000 	mov	r3, r0
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:179
+/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/src/stdfile.cpp:178
 }
     87f8:	e1a00003 	mov	r0, r3
     87fc:	e24bd004 	sub	sp, fp, #4
@@ -2368,7 +2367,7 @@ Disassembly of section .debug_line:
  730:	852f0105 	strhi	r0, [pc, #-261]!	; 633 <shift+0x633>
  734:	4ba10505 	blmi	fe841b50 <__bss_end+0xfe838bc4>
  738:	0c052f4b 	stceq	15, cr2, [r5], {75}	; 0x4b
- 73c:	2f01054c 	svccs	0x0001054c
+ 73c:	2f01054b 	svccs	0x0001054b
  740:	bd050585 	cfstr32lt	mvfx0, [r5, #-532]	; 0xfffffdec
  744:	2f4b4b4b 	svccs	0x004b4b4b
  748:	054c0c05 	strbeq	r0, [ip, #-3077]	; 0xfffff3fb
@@ -3411,11 +3410,11 @@ Disassembly of section .debug_info:
      cd8:	ae030009 	cdpge	0, 0, cr0, cr3, cr9, {0}
      cdc:	1e000006 	cdpne	0, 0, cr0, cr0, cr6, {0}
      ce0:	00000a2f 	andeq	r0, r0, pc, lsr #20
-     ce4:	be0ca401 	cdplt	4, 0, cr10, cr12, cr1, {0}
+     ce4:	be0ca301 	cdplt	3, 0, cr10, cr12, cr1, {0}
      ce8:	05000006 	streq	r0, [r0, #-6]
      cec:	008f5c03 	addeq	r5, pc, r3, lsl #24
      cf0:	06861f00 	streq	r1, [r6], r0, lsl #30
-     cf4:	a6010000 	strge	r0, [r1], -r0
+     cf4:	a5010000 	strge	r0, [r1, #-0]
      cf8:	000b630a 	andeq	r6, fp, sl, lsl #6
      cfc:	00004d00 	andeq	r4, r0, r0, lsl #26
      d00:	00875800 	addeq	r5, r7, r0, lsl #16
@@ -3423,19 +3422,19 @@ Disassembly of section .debug_info:
      d08:	339c0100 	orrscc	r0, ip, #0, 2
      d0c:	20000007 	andcs	r0, r0, r7
      d10:	00000fee 	andeq	r0, r0, lr, ror #31
-     d14:	f71ba601 			; <UNDEFINED> instruction: 0xf71ba601
+     d14:	f71ba501 			; <UNDEFINED> instruction: 0xf71ba501
      d18:	03000001 	movweq	r0, #1
      d1c:	207fac91 			; <UNDEFINED> instruction: 0x207fac91
      d20:	00000bc9 	andeq	r0, r0, r9, asr #23
-     d24:	4d2aa601 	stcmi	6, cr10, [sl, #-4]!
+     d24:	4d2aa501 	cfstr32mi	mvfx10, [sl, #-4]!
      d28:	03000000 	movweq	r0, #0
      d2c:	1e7fa891 	mrcne	8, 3, sl, cr15, cr1, {4}
      d30:	00000afb 	strdeq	r0, [r0], -fp
-     d34:	330aa801 	movwcc	sl, #43009	; 0xa801
+     d34:	330aa701 	movwcc	sl, #42753	; 0xa701
      d38:	03000007 	movweq	r0, #7
      d3c:	1e7fb491 	mrcne	4, 3, fp, cr15, cr1, {4}
      d40:	00000762 	andeq	r0, r0, r2, ror #14
-     d44:	3809ac01 	stmdacc	r9, {r0, sl, fp, sp, pc}
+     d44:	3809ab01 	stmdacc	r9, {r0, r8, r9, fp, sp, pc}
      d48:	02000000 	andeq	r0, r0, #0
      d4c:	0f007491 	svceq	0x00007491
      d50:	00000025 	andeq	r0, r0, r5, lsr #32
@@ -3443,36 +3442,36 @@ Disassembly of section .debug_info:
      d58:	00005e10 	andeq	r5, r0, r0, lsl lr
      d5c:	21003f00 	tstcs	r0, r0, lsl #30
      d60:	00000bae 	andeq	r0, r0, lr, lsr #23
-     d64:	e90a9801 	stmdb	sl, {r0, fp, ip, pc}
+     d64:	e90a9701 	stmdb	sl, {r0, r8, r9, sl, ip, pc}
      d68:	4d00000c 	stcmi	0, cr0, [r0, #-48]	; 0xffffffd0
      d6c:	1c000000 	stcne	0, cr0, [r0], {-0}
      d70:	3c000087 	stccc	0, cr0, [r0], {135}	; 0x87
      d74:	01000000 	mrseq	r0, (UNDEF: 0)
      d78:	0007809c 	muleq	r7, ip, r0
      d7c:	65722200 	ldrbvs	r2, [r2, #-512]!	; 0xfffffe00
-     d80:	9a010071 	bls	40f4c <__bss_end+0x37fc0>
+     d80:	99010071 	stmdbls	r1, {r0, r4, r5, r6}
      d84:	0003ab20 	andeq	sl, r3, r0, lsr #22
      d88:	74910200 	ldrvc	r0, [r1], #512	; 0x200
      d8c:	000b4a1e 	andeq	r4, fp, lr, lsl sl
-     d90:	0e9b0100 	fmleqe	f0, f3, f0
+     d90:	0e9a0100 	fmleqe	f0, f2, f0
      d94:	0000004d 	andeq	r0, r0, sp, asr #32
      d98:	00709102 	rsbseq	r9, r0, r2, lsl #2
      d9c:	000be823 	andeq	lr, fp, r3, lsr #16
-     da0:	068f0100 	streq	r0, [pc], r0, lsl #2
+     da0:	068e0100 	streq	r0, [lr], r0, lsl #2
      da4:	00000815 	andeq	r0, r0, r5, lsl r8
      da8:	000086e0 	andeq	r8, r0, r0, ror #13
      dac:	0000003c 	andeq	r0, r0, ip, lsr r0
      db0:	07b99c01 	ldreq	r9, [r9, r1, lsl #24]!
      db4:	e9200000 	stmdb	r0!, {}	; <UNPREDICTABLE>
      db8:	01000009 	tsteq	r0, r9
-     dbc:	004d218f 	subeq	r2, sp, pc, lsl #3
+     dbc:	004d218e 	subeq	r2, sp, lr, lsl #3
      dc0:	91020000 	mrsls	r0, (UNDEF: 2)
      dc4:	6572226c 	ldrbvs	r2, [r2, #-620]!	; 0xfffffd94
-     dc8:	91010071 	tstls	r1, r1, ror r0
+     dc8:	90010071 	andls	r0, r1, r1, ror r0
      dcc:	0003ab20 	andeq	sl, r3, r0, lsr #22
      dd0:	74910200 	ldrvc	r0, [r1], #512	; 0x200
      dd4:	0b842100 	bleq	fe1091dc <__bss_end+0xfe100250>
-     dd8:	83010000 	movwhi	r0, #4096	; 0x1000
+     dd8:	82010000 	andhi	r0, r1, #0
      ddc:	000a540a 	andeq	r5, sl, sl, lsl #8
      de0:	00004d00 	andeq	r4, r0, r0, lsl #26
      de4:	0086a400 	addeq	sl, r6, r0, lsl #8
@@ -3480,165 +3479,165 @@ Disassembly of section .debug_info:
      dec:	f69c0100 			; <UNDEFINED> instruction: 0xf69c0100
      df0:	22000007 	andcs	r0, r0, #7
      df4:	00716572 	rsbseq	r6, r1, r2, ror r5
-     df8:	87208501 	strhi	r8, [r0, -r1, lsl #10]!
+     df8:	87208401 	strhi	r8, [r0, -r1, lsl #8]!
      dfc:	02000003 	andeq	r0, r0, #3
      e00:	5b1e7491 	blpl	79e04c <__bss_end+0x7950c0>
      e04:	01000007 	tsteq	r0, r7
-     e08:	004d0e86 	subeq	r0, sp, r6, lsl #29
+     e08:	004d0e85 	subeq	r0, sp, r5, lsl #29
      e0c:	91020000 	mrsls	r0, (UNDEF: 2)
      e10:	d1210070 			; <UNDEFINED> instruction: 0xd1210070
      e14:	0100000f 	tsteq	r0, pc
-     e18:	09fd0a77 	ldmibeq	sp!, {r0, r1, r2, r4, r5, r6, r9, fp}^
+     e18:	09fd0a76 	ldmibeq	sp!, {r1, r2, r4, r5, r6, r9, fp}^
      e1c:	004d0000 	subeq	r0, sp, r0
      e20:	86680000 	strbthi	r0, [r8], -r0
      e24:	003c0000 	eorseq	r0, ip, r0
      e28:	9c010000 	stcls	0, cr0, [r1], {-0}
      e2c:	00000833 	andeq	r0, r0, r3, lsr r8
      e30:	71657222 	cmnvc	r5, r2, lsr #4
-     e34:	20790100 	rsbscs	r0, r9, r0, lsl #2
+     e34:	20780100 	rsbscs	r0, r8, r0, lsl #2
      e38:	00000387 	andeq	r0, r0, r7, lsl #7
      e3c:	1e749102 	expnes	f1, f2
      e40:	0000075b 	andeq	r0, r0, fp, asr r7
-     e44:	4d0e7a01 	vstrmi	s14, [lr, #-4]
+     e44:	4d0e7901 	vstrmi.16	s14, [lr, #-2]	; <UNPREDICTABLE>
      e48:	02000000 	andeq	r0, r0, #0
      e4c:	21007091 	swpcs	r7, r1, [r0]
      e50:	00000a7b 	andeq	r0, r0, fp, ror sl
-     e54:	d0066b01 	andle	r6, r6, r1, lsl #22
+     e54:	d0066a01 	andle	r6, r6, r1, lsl #20
      e58:	f000000c 			; <UNDEFINED> instruction: 0xf000000c
      e5c:	14000001 	strne	r0, [r0], #-1
      e60:	54000086 	strpl	r0, [r0], #-134	; 0xffffff7a
      e64:	01000000 	mrseq	r0, (UNDEF: 0)
      e68:	00087f9c 	muleq	r8, ip, pc	; <UNPREDICTABLE>
      e6c:	0b4a2000 	bleq	1288e74 <__bss_end+0x127fee8>
-     e70:	6b010000 	blvs	40e78 <__bss_end+0x37eec>
+     e70:	6a010000 	bvs	40e78 <__bss_end+0x37eec>
      e74:	00004d15 	andeq	r4, r0, r5, lsl sp
      e78:	6c910200 	lfmvs	f0, 4, [r1], {0}
      e7c:	00096920 	andeq	r6, r9, r0, lsr #18
-     e80:	256b0100 	strbcs	r0, [fp, #-256]!	; 0xffffff00
+     e80:	256a0100 	strbcs	r0, [sl, #-256]!	; 0xffffff00
      e84:	0000004d 	andeq	r0, r0, sp, asr #32
      e88:	1e689102 	lgnnee	f1, f2
      e8c:	00000fc9 	andeq	r0, r0, r9, asr #31
-     e90:	4d0e6d01 	stcmi	13, cr6, [lr, #-4]
+     e90:	4d0e6c01 	stcmi	12, cr6, [lr, #-4]
      e94:	02000000 	andeq	r0, r0, #0
      e98:	21007491 			; <UNDEFINED> instruction: 0x21007491
      e9c:	0000082c 	andeq	r0, r0, ip, lsr #16
-     ea0:	28125e01 	ldmdacs	r2, {r0, r9, sl, fp, ip, lr}
+     ea0:	28125d01 	ldmdacs	r2, {r0, r8, sl, fp, ip, lr}
      ea4:	8b00000d 	blhi	ee0 <shift+0xee0>
      ea8:	c4000000 	strgt	r0, [r0], #-0
      eac:	50000085 	andpl	r0, r0, r5, lsl #1
      eb0:	01000000 	mrseq	r0, (UNDEF: 0)
      eb4:	0008da9c 	muleq	r8, ip, sl
      eb8:	05452000 	strbeq	r2, [r5, #-0]
-     ebc:	5e010000 	cdppl	0, 0, cr0, cr1, cr0, {0}
+     ebc:	5d010000 	stcpl	0, cr0, [r1, #-0]
      ec0:	00004d20 	andeq	r4, r0, r0, lsr #26
      ec4:	6c910200 	lfmvs	f0, 4, [r1], {0}
      ec8:	000b8d20 	andeq	r8, fp, r0, lsr #26
-     ecc:	2f5e0100 	svccs	0x005e0100
+     ecc:	2f5d0100 	svccs	0x005d0100
      ed0:	0000004d 	andeq	r0, r0, sp, asr #32
      ed4:	20689102 	rsbcs	r9, r8, r2, lsl #2
      ed8:	00000969 	andeq	r0, r0, r9, ror #18
-     edc:	4d3f5e01 	ldcmi	14, cr5, [pc, #-4]!	; ee0 <shift+0xee0>
+     edc:	4d3f5d01 	ldcmi	13, cr5, [pc, #-4]!	; ee0 <shift+0xee0>
      ee0:	02000000 	andeq	r0, r0, #0
      ee4:	c91e6491 	ldmdbgt	lr, {r0, r4, r7, sl, sp, lr}
      ee8:	0100000f 	tsteq	r0, pc
-     eec:	008b1660 	addeq	r1, fp, r0, ror #12
+     eec:	008b165f 	addeq	r1, fp, pc, asr r6
      ef0:	91020000 	mrsls	r0, (UNDEF: 2)
      ef4:	71210074 			; <UNDEFINED> instruction: 0x71210074
      ef8:	0100000d 	tsteq	r0, sp
-     efc:	08370a52 	ldmdaeq	r7!, {r1, r4, r6, r9, fp}
+     efc:	08370a51 	ldmdaeq	r7!, {r0, r4, r6, r9, fp}
      f00:	004d0000 	subeq	r0, sp, r0
      f04:	85800000 	strhi	r0, [r0]
      f08:	00440000 	subeq	r0, r4, r0
      f0c:	9c010000 	stcls	0, cr0, [r1], {-0}
      f10:	00000926 	andeq	r0, r0, r6, lsr #18
      f14:	00054520 	andeq	r4, r5, r0, lsr #10
-     f18:	1a520100 	bne	1481320 <__bss_end+0x1478394>
+     f18:	1a510100 	bne	1441320 <__bss_end+0x1438394>
      f1c:	0000004d 	andeq	r0, r0, sp, asr #32
      f20:	206c9102 	rsbcs	r9, ip, r2, lsl #2
      f24:	00000b8d 	andeq	r0, r0, sp, lsl #23
-     f28:	4d295201 	sfmmi	f5, 4, [r9, #-4]!
+     f28:	4d295101 	stfmis	f5, [r9, #-4]!
      f2c:	02000000 	andeq	r0, r0, #0
      f30:	571e6891 			; <UNDEFINED> instruction: 0x571e6891
      f34:	0100000d 	tsteq	r0, sp
-     f38:	004d0e54 	subeq	r0, sp, r4, asr lr
+     f38:	004d0e53 	subeq	r0, sp, r3, asr lr
      f3c:	91020000 	mrsls	r0, (UNDEF: 2)
      f40:	51210074 			; <UNDEFINED> instruction: 0x51210074
      f44:	0100000d 	tsteq	r0, sp
-     f48:	0d330a45 	vldmdbeq	r3!, {s0-s68}
+     f48:	0d330a44 	vldmdbeq	r3!, {s0-s67}
      f4c:	004d0000 	subeq	r0, sp, r0
      f50:	85300000 	ldrhi	r0, [r0, #-0]!
      f54:	00500000 	subseq	r0, r0, r0
      f58:	9c010000 	stcls	0, cr0, [r1], {-0}
      f5c:	00000981 	andeq	r0, r0, r1, lsl #19
      f60:	00054520 	andeq	r4, r5, r0, lsr #10
-     f64:	19450100 	stmdbne	r5, {r8}^
+     f64:	19440100 	stmdbne	r4, {r8}^
      f68:	0000004d 	andeq	r0, r0, sp, asr #32
      f6c:	206c9102 	rsbcs	r9, ip, r2, lsl #2
      f70:	00000ab5 			; <UNDEFINED> instruction: 0x00000ab5
-     f74:	1d304501 	cfldr32ne	mvfx4, [r0, #-4]!
+     f74:	1d304401 	cfldrsne	mvf4, [r0, #-4]!
      f78:	02000001 	andeq	r0, r0, #1
      f7c:	9a206891 	bls	81b1c8 <__bss_end+0x81223c>
      f80:	0100000b 	tsteq	r0, fp
-     f84:	06ac4145 	strteq	r4, [ip], r5, asr #2
+     f84:	06ac4144 	strteq	r4, [ip], r4, asr #2
      f88:	91020000 	mrsls	r0, (UNDEF: 2)
      f8c:	0fc91e64 	svceq	0x00c91e64
-     f90:	47010000 	strmi	r0, [r1, -r0]
+     f90:	46010000 	strmi	r0, [r1], -r0
      f94:	00004d0e 	andeq	r4, r0, lr, lsl #26
      f98:	74910200 	ldrvc	r0, [r1], #512	; 0x200
      f9c:	07302300 	ldreq	r2, [r0, -r0, lsl #6]!
-     fa0:	3f010000 	svccc	0x00010000
+     fa0:	3e010000 	cdpcc	0, 0, cr0, cr1, cr0, {0}
      fa4:	000abf06 	andeq	fp, sl, r6, lsl #30
      fa8:	00850400 	addeq	r0, r5, r0, lsl #8
      fac:	00002c00 	andeq	r2, r0, r0, lsl #24
      fb0:	ab9c0100 	blge	fe7013b8 <__bss_end+0xfe6f842c>
      fb4:	20000009 	andcs	r0, r0, r9
      fb8:	00000545 	andeq	r0, r0, r5, asr #10
-     fbc:	4d153f01 	ldcmi	15, cr3, [r5, #-4]
+     fbc:	4d153e01 	ldcmi	14, cr3, [r5, #-4]
      fc0:	02000000 	andeq	r0, r0, #0
      fc4:	21007491 			; <UNDEFINED> instruction: 0x21007491
      fc8:	00000b3a 	andeq	r0, r0, sl, lsr fp
-     fcc:	a00a3201 	andge	r3, sl, r1, lsl #4
+     fcc:	a00a3101 	andge	r3, sl, r1, lsl #2
      fd0:	4d00000b 	stcmi	0, cr0, [r0, #-44]	; 0xffffffd4
      fd4:	b4000000 	strlt	r0, [r0], #-0
      fd8:	50000084 	andpl	r0, r0, r4, lsl #1
      fdc:	01000000 	mrseq	r0, (UNDEF: 0)
      fe0:	000a069c 	muleq	sl, ip, r6
      fe4:	05452000 	strbeq	r2, [r5, #-0]
-     fe8:	32010000 	andcc	r0, r1, #0
+     fe8:	31010000 	mrscc	r0, (UNDEF: 1)
      fec:	00004d19 	andeq	r4, r0, r9, lsl sp
      ff0:	6c910200 	lfmvs	f0, 4, [r1], {0}
      ff4:	000d9320 	andeq	r9, sp, r0, lsr #6
-     ff8:	2b320100 	blcs	c81400 <__bss_end+0xc78474>
+     ff8:	2b310100 	blcs	c41400 <__bss_end+0xc38474>
      ffc:	000001f7 	strdeq	r0, [r0], -r7
     1000:	20689102 	rsbcs	r9, r8, r2, lsl #2
     1004:	00000bcd 	andeq	r0, r0, sp, asr #23
-    1008:	4d3c3201 	lfmmi	f3, 4, [ip, #-4]!
+    1008:	4d3c3101 	ldfmis	f3, [ip, #-4]!
     100c:	02000000 	andeq	r0, r0, #0
     1010:	221e6491 	andscs	r6, lr, #-1862270976	; 0x91000000
     1014:	0100000d 	tsteq	r0, sp
-    1018:	004d0e34 	subeq	r0, sp, r4, lsr lr
+    1018:	004d0e33 	subeq	r0, sp, r3, lsr lr
     101c:	91020000 	mrsls	r0, (UNDEF: 2)
     1020:	09210074 	stmdbeq	r1!, {r2, r4, r5, r6}
     1024:	01000010 	tsteq	r0, r0, lsl r0
-    1028:	0e130a25 	vnmlseq.f32	s0, s6, s11
+    1028:	0e130a24 	vnmlseq.f32	s0, s6, s9
     102c:	004d0000 	subeq	r0, sp, r0
     1030:	84640000 	strbthi	r0, [r4], #-0
     1034:	00500000 	subseq	r0, r0, r0
     1038:	9c010000 	stcls	0, cr0, [r1], {-0}
     103c:	00000a61 	andeq	r0, r0, r1, ror #20
     1040:	00054520 	andeq	r4, r5, r0, lsr #10
-    1044:	18250100 	stmdane	r5!, {r8}
+    1044:	18240100 	stmdane	r4!, {r8}
     1048:	0000004d 	andeq	r0, r0, sp, asr #32
     104c:	206c9102 	rsbcs	r9, ip, r2, lsl #2
     1050:	00000d93 	muleq	r0, r3, sp
-    1054:	672a2501 	strvs	r2, [sl, -r1, lsl #10]!
+    1054:	672a2401 	strvs	r2, [sl, -r1, lsl #8]!
     1058:	0200000a 	andeq	r0, r0, #10
     105c:	cd206891 	stcgt	8, cr6, [r0, #-580]!	; 0xfffffdbc
     1060:	0100000b 	tsteq	r0, fp
-    1064:	004d3b25 	subeq	r3, sp, r5, lsr #22
+    1064:	004d3b24 	subeq	r3, sp, r4, lsr #22
     1068:	91020000 	mrsls	r0, (UNDEF: 2)
     106c:	07a81e64 	streq	r1, [r8, r4, ror #28]!
-    1070:	27010000 	strcs	r0, [r1, -r0]
+    1070:	26010000 	strcs	r0, [r1], -r0
     1074:	00004d0e 	andeq	r4, r0, lr, lsl #26
     1078:	74910200 	ldrvc	r0, [r1], #512	; 0x200
     107c:	25040d00 	strcs	r0, [r4, #-3328]	; 0xfffff300

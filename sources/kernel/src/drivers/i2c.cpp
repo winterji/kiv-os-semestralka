@@ -1,6 +1,7 @@
 #include <drivers/i2c.h>
 
 #include <drivers/gpio.h>
+#include <stdfile.h>
 
 CI2C::CI2C(unsigned long base, uint32_t pin_sda, uint32_t pin_scl, NGPIO_Function func)
     : mBSC_Base(reinterpret_cast<volatile uint32_t*>(base)),
@@ -14,20 +15,22 @@ CI2C::CI2C(unsigned long base, uint32_t pin_sda, uint32_t pin_scl, NGPIO_Functio
 
 bool CI2C::Open()
 {
-    if (!sGPIO.Reserve_Pin(mSDA_Pin, true, true))
+    uint32_t log = pipe("log", 32);
+    if (!sGPIO.Reserve_Pin(mSDA_Pin, true, true)) {
         return false;
-
-    if (!sGPIO.Reserve_Pin(mSCL_Pin, true, true))
-    {
+    }
+    write(log, "SDA pin reserved\n", 17);
+    if (!sGPIO.Reserve_Pin(mSCL_Pin, true, true)) {
         sGPIO.Free_Pin(mSDA_Pin, true, true);
         return false;
     }
+    write(log, "SCL pin reserved\n", 17);
 
     sGPIO.Set_GPIO_Function(mSDA_Pin, mGPIO_Function);
     sGPIO.Set_GPIO_Function(mSCL_Pin, mGPIO_Function);
 
     mOpened = true;
-
+    write(log, "I2C opened\n", 11);
     return true;
 }
 

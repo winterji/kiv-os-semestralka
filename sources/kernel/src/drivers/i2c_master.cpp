@@ -16,6 +16,16 @@ volatile uint32_t& CI2C_MASTER::Reg(hal::BSC_Reg reg)
     return mBSC_Base[static_cast<uint32_t>(reg)];
 }
 
+bool CI2C_MASTER::Open()
+{
+    if (CI2C::Open()) {
+        // Reg(hal::BSC_Reg::Control) = (1 << 15); // enable device
+        // Reg(hal::BSC_Reg::Clock_Div) = 150; // 150 = 100kHz
+        return true;
+    }
+    return false;
+}
+
 void CI2C_MASTER::Close()
 {
     Reg(hal::BSC_Reg::Control) = 0;

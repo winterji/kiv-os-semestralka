@@ -13,6 +13,8 @@ class CI2C_MASTER : public CI2C
     public:
         CI2C_MASTER(unsigned long base, uint32_t pin_sda, uint32_t pin_scl);
 
+        // otevre driver
+        bool Open();
         // zavre driver
         void Close();
 

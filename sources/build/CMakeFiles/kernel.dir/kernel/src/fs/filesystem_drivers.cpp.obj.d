@@ -32,4 +32,5 @@ CMakeFiles/kernel.dir/kernel/src/fs/filesystem_drivers.cpp.obj: \
  /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/include/drivers/i2c_slave.h \
  /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/include/drivers/i2c.h \
  /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/include/drivers/bridges/i2c_defs.h \
- /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/include/drivers/i2c_master.h
+ /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/kernel/include/drivers/i2c_master.h \
+ /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/stdlib/include/stdfile.h

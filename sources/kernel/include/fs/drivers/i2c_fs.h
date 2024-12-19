@@ -9,6 +9,8 @@
 #include <stdstring.h>
 #include <process/process_manager.h>
 
+#include <stdfile.h>
+
 // virtualni soubor pro GPIO pin
 class CI2C_File final : public IFile
 {
@@ -138,12 +140,19 @@ class CI2C_FS_Driver : public IFilesystem_Driver
                 return nullptr;
                 break;
             }
-
-            channel->Open();
-
-            CI2C_File* f = new CI2C_File(channelNum, channel);
-
-            return f;
+            uint32_t log = pipe("log", 32);
+            if (channel->Open()) {  
+                CI2C_File* f = new CI2C_File(channelNum, channel);
+                write(log, "I2C FS opened\n", 14);
+                char buff[4];
+                uint32_t fa = reinterpret_cast<uint32_t>(f);
+                itoa(fa, buff, 10);
+                write(log, buff, strlen(buff));
+                return f;
+            }
+            else {
+                return nullptr;
+            }
         }
 };
 

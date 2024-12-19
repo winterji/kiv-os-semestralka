@@ -14,7 +14,12 @@
 constexpr uint32_t symbol_tick_delay = 0x400;
 constexpr uint32_t char_tick_delay = 0x1000;
 
-uint32_t led, uart, master, log;
+uint32_t led, uart, master, log_fd;
+
+void log(const char* msg)
+{
+    write(log_fd, msg, strlen(msg));
+}
 
 void blink()
 {
@@ -27,22 +32,26 @@ int main(int argc, char** argv)
 {
     char buff[4];
 
-    log = pipe("log", 32);
+    log_fd = pipe("log", 32);
     // trng = open("DEV:trng/0", NFile_Open_Mode::Read_Write);
 
-    write(log, "Master task started\n", 21);
+    log("Master task started\n");
 
     // start i2c connection
     master = open("DEV:i2c/1", NFile_Open_Mode::Read_Write);
-    write(log, "I2C connection master started...\n", 33);
+    if (master == Invalid_Handle) {
+        log("Error opening I2C master connection\n");
+        return 1;
+    }
+    log("I2C connection master started...\n");
     for (;;) {
-        write(log, "Hello from master\n", 18);
+        log("Hello from master\n");
         sleep(0x10000);
     }
 
     close(master);
-    write(log, "Open files closed in master\n", 29);
-    close(log);
+    log("Open files closed in master\n");
+    close(log_fd);
 
     return 0;
 }

@@ -63,7 +63,7 @@ extern "C" int _kernel_main(void)
 	sProcessMgr.Create_Process(__logger_task, __logger_task_len, false);
 
 	sProcessMgr.Create_Process(__master_task, __master_task_len, false);
-	sProcessMgr.Create_Process(__slave_task, __slave_task_len, false);
+	// sProcessMgr.Create_Process(__slave_task, __slave_task_len, false);
 	// sProcessMgr.Create_Process(reinterpret_cast<unsigned long>(&Process_I2C));
 
 

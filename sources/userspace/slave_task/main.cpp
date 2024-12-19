@@ -14,7 +14,12 @@
 constexpr uint32_t symbol_tick_delay = 0x400;
 constexpr uint32_t char_tick_delay = 0x1000;
 
-uint32_t log, slave;
+uint32_t log_fd, slave;
+
+void log(const char* msg)
+{
+    write(log_fd, msg, strlen(msg));
+}
 
 // void blink()
 // {
@@ -46,21 +51,25 @@ int main(int argc, char** argv)
 {
     char buff[4];
 
-    log = pipe("log", 32);
+    log_fd = pipe("log", 32);
 
-    write(log, "Slave task started\n", 19);
+    log("Slave task started\n");
 
     // start i2c connection
     slave = open("DEV:i2c/2", NFile_Open_Mode::Read_Write);
-    write(log, "I2C connection slave started...\n", 30);
+    if (slave == Invalid_Handle) {
+        log("Error opening I2C slave connection\n");
+        return 1;
+    }
+    log("I2C connection slave started...\n");
     for (;;) {
-        write(log, "Hello from slave\n", 17);
+        log("Hello from slave\n");
         sleep(0x10000);
     }
 
     close(slave);
-    write(log, "Open files closed in slave\n", 28);
-    close(log);
+    log("Open files closed in slave\n");
+    close(log_fd);
 
     return 0;
 }
