@@ -21,8 +21,6 @@ class CI2C_SLAVE : public CI2C
     public:
         CI2C_SLAVE(unsigned long base, uint32_t pin_sda, uint32_t pin_scl);
         
-        bool mIRQ_Pending;
-
         // otevre driver
         bool Open() override;
         // zavre driver

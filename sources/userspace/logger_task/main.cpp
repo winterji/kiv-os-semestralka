@@ -43,29 +43,6 @@ int main(int argc, char** argv)
 		
 		wait(logpipe, 1, 0x1000);
 		uint32_t v = read(logpipe, buf, 32);
-		// if (v <= 0) {
-		// 	wait(logpipe, 1, 0x1000);
-		// 	continue;
-		// }
-			
-
-		// for (uint32_t i = 0; i < v; i++) {
-		// 	buf[free_index++] = big_buf[i];
-		// 	if (big_buf[i] == '\n') {
-		// 		buf[i+1] = '\0';
-		// 		fputs(uart_file, "\r\n[ ");
-		// 		uint32_t tick = get_tick_count();
-		// 		itoa(tick, tickbuf, 16);
-		// 		fputs(uart_file, tickbuf);
-		// 		fputs(uart_file, "]: ");
-		// 		fputs(uart_file, buf);
-		// 		// sleep before it is actually written
-		// 		// sleep(0x100);
-		// 		// zero out the buffer
-		// 		bzero(buf, 129);
-		// 		free_index = 0;
-		// 	}
-		// }
 		if (v > 0)
 		{
 			buf[v] = '\0';

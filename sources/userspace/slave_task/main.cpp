@@ -5,12 +5,6 @@
 #include <drivers/gpio.h>
 #include <drivers/i2c_slave.h>
 
-/**
- * Hello task - blicks LED on GPIO pin 47 and writes hello message to uart
- * 
- * Ceka na stisk tlacitka, po stisku vyblika LEDkou "SOS" signal
- **/
-
 constexpr float UPPER_BOUND = 11.0F;
 constexpr float LOWER_BOUND = 3.5F;
 
@@ -194,11 +188,9 @@ int main(int argc, char** argv)
     set_roles(DESIRED_ROLE);
 
     for (;;) {
-        // log("trying to send random value\n");
         send_value(random_values[counter]);
         prev_value = random_values[counter];
         counter = (counter + 1) % random_values_len;
-        // log("Data sent from slave\n");
         sleep(0x15000);
     }
 

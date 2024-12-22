@@ -5,12 +5,6 @@
 #include <drivers/gpio.h>
 #include <drivers/i2c_master.h>
 
-/**
- * Hello task - blicks LED on GPIO pin 47 and writes hello message to uart
- * 
- * Ceka na stisk tlacitka, po stisku vyblika LEDkou "SOS" signal
- **/
-
 constexpr uint32_t ADDRESS = 1;
 constexpr uint32_t TARGET_ADDRESS = 2;
 constexpr CI2C_Mode DESIRED_ROLE = CI2C_Mode::Master;
@@ -177,7 +171,6 @@ int main(int argc, char** argv)
     uint32_t slave_input;
 
     log_fd = pipe("log", 128);
-    // trng = open("DEV:trng/0", NFile_Open_Mode::Read_Write);
 
     log("Master task started\n");
 
@@ -203,11 +196,6 @@ int main(int argc, char** argv)
         bzero(buff, 9);
         receive_data();
 
-        // strncpy(msg, "Received: ", 10);
-        // concat(msg, buff);
-        // concat(msg, "\n");
-        // log(msg);
-        // log("Data sent from master\n");
         sleep(0x15000);
     }
 

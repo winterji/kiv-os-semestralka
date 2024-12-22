@@ -85,8 +85,6 @@ void CI2C_SLAVE::Receive(uint16_t addr, char* buffer, uint32_t len)
 
 bool CI2C_SLAVE::Is_IRQ_Pending()
 {
-    // uint32_t log = pipe("log", 128);
-    // write(log, "Is_IRQ_Pending\n", 16);
     volatile uint32_t& r = Reg(hal::I2C_SLAVE_Reg::RIS);
     return r & (1 << 0);
 }
