@@ -40,7 +40,7 @@ class CPipe_FS_Driver : public IFilesystem_Driver
                 }
             }*/
 
-            return sProcess_Resource_Manager.Alloc_Pipe("roura", 32/*pipename, pipesize*/);
+            return sProcess_Resource_Manager.Alloc_Pipe("roura", 64/*pipename, pipesize*/);
         }
 };
 

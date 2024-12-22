@@ -30,12 +30,14 @@ class CI2C {
         bool Is_Opened() const;
 
         // otevre driver
-        bool Open();
+        virtual bool Open();
         // zavre driver
-        void Close();
+        virtual void Close();
 
         // odesle pres I2C na danou adresu obsah bufferu
-        void Send(uint16_t addr, const char* buffer, uint32_t len);
+        virtual void Send(uint16_t addr, const char* buffer, uint32_t len) = 0;
         // prijme z I2C z dane adresy obsah do bufferu o dane delce
-        void Receive(uint16_t addr, char* buffer, uint32_t len);
+        virtual void Receive(uint16_t addr, char* buffer, uint32_t len) = 0;
+
+        virtual void Set_Address(uint8_t addr) = 0;
 };

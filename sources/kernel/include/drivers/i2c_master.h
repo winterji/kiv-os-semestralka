@@ -14,14 +14,16 @@ class CI2C_MASTER : public CI2C
         CI2C_MASTER(unsigned long base, uint32_t pin_sda, uint32_t pin_scl);
 
         // otevre driver
-        bool Open();
+        bool Open() override;
         // zavre driver
-        void Close();
+        void Close() override;
 
         // odesle pres I2C na danou adresu obsah bufferu
-        void Send(uint16_t addr, const char* buffer, uint32_t len);
+        virtual void Send(uint16_t addr, const char* buffer, uint32_t len) override;
         // prijme z I2C z dane adresy obsah do bufferu o dane delce
-        void Receive(uint16_t addr, char* buffer, uint32_t len);
+        virtual void Receive(uint16_t addr, char* buffer, uint32_t len) override;
+
+        virtual void Set_Address(uint8_t addr) override;
 };
 
 // // trida reprezentujici I2C "transakci"

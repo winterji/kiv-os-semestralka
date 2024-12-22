@@ -13,7 +13,8 @@ enum class CI2C_Channel
 enum class CI2C_Mode
 {
     Master,
-    Slave
+    Slave,
+    Undefined
 };
 
 // parametry UARTu pro prenos skrz IOCTL rozhrani

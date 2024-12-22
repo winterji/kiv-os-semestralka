@@ -7,6 +7,8 @@
 #include <process/process_manager.h>
 #include <process/swi.h>
 
+#include <drivers/i2c_slave.h>
+
 extern "C"
 {
     void enable_irq();
@@ -43,13 +45,18 @@ extern "C" void _internal_irq_handler()
 {
     // jelikoz ARM nerozlisuje zdroje IRQ implicitne, ani nezarucuje, ze se navzajen nemaskuji, musime
     // projit vsechny mozne zdroje a podivat se (poll), zda nebylo vyvolano preruseni
-
+    // i2c slave
+    if (sI2C1_SLAVE.Is_IRQ_Pending())
+        sI2C1_SLAVE.IRQ_Callback();
+        
     // GPIO (samo si overi, zda k nejakemu doslo)
     sGPIO.Handle_IRQ();
 
     // casovac
     if (sTimer.Is_Timer_IRQ_Pending())
         sTimer.IRQ_Callback();
+    
+    
 }
 
 extern "C" void __attribute__((interrupt("FIQ"))) fast_interrupt_handler()

@@ -77,8 +77,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles/CMakeScratch/TryCompile-AxW3zF"
-      binary: "/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles/CMakeScratch/TryCompile-AxW3zF"
+      source: "/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles/CMakeScratch/TryCompile-bV42On"
+      binary: "/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles/CMakeScratch/TryCompile-bV42On"
     cmakeVariables:
       CMAKE_CXX_FLAGS: " -O0 -g -nostartfiles -mfloat-abi=hard -mfpu=vfp -march=armv6zk -mtune=arm1176jzf-s -fno-exceptions -fno-rtti -O0 -g -nostartfiles -mfloat-abi=hard -mfpu=vfp -march=armv6zk -mtune=arm1176jzf-s -fno-exceptions -fno-rtti"
       CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
@@ -86,13 +86,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles/CMakeScratch/TryCompile-AxW3zF'
+        Change Dir: '/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles/CMakeScratch/TryCompile-bV42On'
         
-        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_4bfa9/fast
-        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_4bfa9.dir/build.make CMakeFiles/cmTC_4bfa9.dir/build
-        gmake[1]: Entering directory '/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles/CMakeScratch/TryCompile-AxW3zF'
-        Building CXX object CMakeFiles/cmTC_4bfa9.dir/CMakeCXXCompilerABI.cpp.obj
-        /opt/homebrew/bin/arm-none-eabi-g++ -DRPI0=1  -O0 -g -nostartfiles -mfloat-abi=hard -mfpu=vfp -march=armv6zk -mtune=arm1176jzf-s -fno-exceptions -fno-rtti -O0 -g -nostartfiles -mfloat-abi=hard -mfpu=vfp -march=armv6zk -mtune=arm1176jzf-s -fno-exceptions -fno-rtti    -v -o CMakeFiles/cmTC_4bfa9.dir/CMakeCXXCompilerABI.cpp.obj -c /opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_c2beb/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_c2beb.dir/build.make CMakeFiles/cmTC_c2beb.dir/build
+        gmake[1]: Entering directory '/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles/CMakeScratch/TryCompile-bV42On'
+        Building CXX object CMakeFiles/cmTC_c2beb.dir/CMakeCXXCompilerABI.cpp.obj
+        /opt/homebrew/bin/arm-none-eabi-g++ -DRPI0=1  -O0 -g -nostartfiles -mfloat-abi=hard -mfpu=vfp -march=armv6zk -mtune=arm1176jzf-s -fno-exceptions -fno-rtti -O0 -g -nostartfiles -mfloat-abi=hard -mfpu=vfp -march=armv6zk -mtune=arm1176jzf-s -fno-exceptions -fno-rtti    -v -o CMakeFiles/cmTC_c2beb.dir/CMakeCXXCompilerABI.cpp.obj -c /opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/opt/homebrew/bin/arm-none-eabi-g++
         Target: arm-none-eabi
@@ -100,8 +100,8 @@ events:
         Thread model: single
         Supported LTO compression algorithms: zlib
         gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
-        COLLECT_GCC_OPTIONS='-D' 'RPI0=1' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp'  '-mtune=arm1176jzf-s' '-fno-exceptions' '-fno-rtti' '-v' '-o' 'CMakeFiles/cmTC_4bfa9.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-marm' '-mlibarch=armv6zk+fp' '-march=armv6zk+fp'
-         /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1plus -quiet -v -imultilib arm/v5te/hard -iprefix /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/ -isysroot /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi -D__USES_INITFINI__ -D RPI0=1 /opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mfloat-abi=hard -mfpu=vfp -mfloat-abi=hard -mfpu=vfp -mtune=arm1176jzf-s -marm -mlibarch=armv6zk+fp -march=armv6zk+fp -auxbase-strip CMakeFiles/cmTC_4bfa9.dir/CMakeCXXCompilerABI.cpp.obj -g -g -O0 -O0 -version -fno-exceptions -fno-rtti -o /var/folders/n5/py90dwr90vg86snbhzpz_klw0000gn/T//ccejFiNA.s
+        COLLECT_GCC_OPTIONS='-D' 'RPI0=1' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp'  '-mtune=arm1176jzf-s' '-fno-exceptions' '-fno-rtti' '-v' '-o' 'CMakeFiles/cmTC_c2beb.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-marm' '-mlibarch=armv6zk+fp' '-march=armv6zk+fp'
+         /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1plus -quiet -v -imultilib arm/v5te/hard -iprefix /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/ -isysroot /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi -D__USES_INITFINI__ -D RPI0=1 /opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mfloat-abi=hard -mfpu=vfp -mfloat-abi=hard -mfpu=vfp -mtune=arm1176jzf-s -marm -mlibarch=armv6zk+fp -march=armv6zk+fp -auxbase-strip CMakeFiles/cmTC_c2beb.dir/CMakeCXXCompilerABI.cpp.obj -g -g -O0 -O0 -version -fno-exceptions -fno-rtti -o /var/folders/n5/py90dwr90vg86snbhzpz_klw0000gn/T//ccUknFTv.s
         GNU C++14 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
         	compiled by GNU C version 4.2.1 Compatible Apple LLVM 11.0.0 (clang-1100.0.33.17), GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
         
@@ -128,18 +128,18 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: aef279e1140f94be80a6badcc599c728
-        COLLECT_GCC_OPTIONS='-D' 'RPI0=1' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp'  '-mtune=arm1176jzf-s' '-fno-exceptions' '-fno-rtti' '-v' '-o' 'CMakeFiles/cmTC_4bfa9.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-marm' '-mlibarch=armv6zk+fp' '-march=armv6zk+fp'
-         /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as -v -march=armv6zk -mfloat-abi=hard -mfloat-abi=hard -mfpu=vfp -mfpu=vfp -meabi=5 -o CMakeFiles/cmTC_4bfa9.dir/CMakeCXXCompilerABI.cpp.obj /var/folders/n5/py90dwr90vg86snbhzpz_klw0000gn/T//ccejFiNA.s
+        COLLECT_GCC_OPTIONS='-D' 'RPI0=1' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp'  '-mtune=arm1176jzf-s' '-fno-exceptions' '-fno-rtti' '-v' '-o' 'CMakeFiles/cmTC_c2beb.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-marm' '-mlibarch=armv6zk+fp' '-march=armv6zk+fp'
+         /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as -v -march=armv6zk -mfloat-abi=hard -mfloat-abi=hard -mfpu=vfp -mfpu=vfp -meabi=5 -o CMakeFiles/cmTC_c2beb.dir/CMakeCXXCompilerABI.cpp.obj /var/folders/n5/py90dwr90vg86snbhzpz_klw0000gn/T//ccUknFTv.s
         GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621
         COMPILER_PATH=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
         LIBRARY_PATH=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/arm/v5te/hard/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/arm/v5te/hard/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib/arm/v5te/hard/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-D' 'RPI0=1' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp'  '-mtune=arm1176jzf-s' '-fno-exceptions' '-fno-rtti' '-v' '-o' 'CMakeFiles/cmTC_4bfa9.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-marm' '-mlibarch=armv6zk+fp' '-march=armv6zk+fp'
-        Linking CXX static library libcmTC_4bfa9.a
-        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -P CMakeFiles/cmTC_4bfa9.dir/cmake_clean_target.cmake
-        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4bfa9.dir/link.txt --verbose=1
-        /opt/homebrew/bin/arm-none-eabi-ar qc libcmTC_4bfa9.a CMakeFiles/cmTC_4bfa9.dir/CMakeCXXCompilerABI.cpp.obj
-        /opt/homebrew/bin/arm-none-eabi-ranlib libcmTC_4bfa9.a
-        gmake[1]: Leaving directory '/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles/CMakeScratch/TryCompile-AxW3zF'
+        COLLECT_GCC_OPTIONS='-D' 'RPI0=1' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp'  '-mtune=arm1176jzf-s' '-fno-exceptions' '-fno-rtti' '-v' '-o' 'CMakeFiles/cmTC_c2beb.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-marm' '-mlibarch=armv6zk+fp' '-march=armv6zk+fp'
+        Linking CXX static library libcmTC_c2beb.a
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -P CMakeFiles/cmTC_c2beb.dir/cmake_clean_target.cmake
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2beb.dir/link.txt --verbose=1
+        /opt/homebrew/bin/arm-none-eabi-ar qc libcmTC_c2beb.a CMakeFiles/cmTC_c2beb.dir/CMakeCXXCompilerABI.cpp.obj
+        /opt/homebrew/bin/arm-none-eabi-ranlib libcmTC_c2beb.a
+        gmake[1]: Leaving directory '/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles/CMakeScratch/TryCompile-bV42On'
         
       exitCode: 0
   -
@@ -178,13 +178,13 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: '/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles/CMakeScratch/TryCompile-AxW3zF']
+        ignore line: [Change Dir: '/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles/CMakeScratch/TryCompile-bV42On']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_4bfa9/fast]
-        ignore line: [/opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_4bfa9.dir/build.make CMakeFiles/cmTC_4bfa9.dir/build]
-        ignore line: [gmake[1]: Entering directory '/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles/CMakeScratch/TryCompile-AxW3zF']
-        ignore line: [Building CXX object CMakeFiles/cmTC_4bfa9.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: [/opt/homebrew/bin/arm-none-eabi-g++ -DRPI0=1  -O0 -g -nostartfiles -mfloat-abi=hard -mfpu=vfp -march=armv6zk -mtune=arm1176jzf-s -fno-exceptions -fno-rtti -O0 -g -nostartfiles -mfloat-abi=hard -mfpu=vfp -march=armv6zk -mtune=arm1176jzf-s -fno-exceptions -fno-rtti    -v -o CMakeFiles/cmTC_4bfa9.dir/CMakeCXXCompilerABI.cpp.obj -c /opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_c2beb/fast]
+        ignore line: [/opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_c2beb.dir/build.make CMakeFiles/cmTC_c2beb.dir/build]
+        ignore line: [gmake[1]: Entering directory '/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles/CMakeScratch/TryCompile-bV42On']
+        ignore line: [Building CXX object CMakeFiles/cmTC_c2beb.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [/opt/homebrew/bin/arm-none-eabi-g++ -DRPI0=1  -O0 -g -nostartfiles -mfloat-abi=hard -mfpu=vfp -march=armv6zk -mtune=arm1176jzf-s -fno-exceptions -fno-rtti -O0 -g -nostartfiles -mfloat-abi=hard -mfpu=vfp -march=armv6zk -mtune=arm1176jzf-s -fno-exceptions -fno-rtti    -v -o CMakeFiles/cmTC_c2beb.dir/CMakeCXXCompilerABI.cpp.obj -c /opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/opt/homebrew/bin/arm-none-eabi-g++]
         ignore line: [Target: arm-none-eabi]
@@ -192,8 +192,8 @@ events:
         ignore line: [Thread model: single]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-D' 'RPI0=1' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp'  '-mtune=arm1176jzf-s' '-fno-exceptions' '-fno-rtti' '-v' '-o' 'CMakeFiles/cmTC_4bfa9.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-marm' '-mlibarch=armv6zk+fp' '-march=armv6zk+fp']
-        ignore line: [ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1plus -quiet -v -imultilib arm/v5te/hard -iprefix /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/ -isysroot /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi -D__USES_INITFINI__ -D RPI0=1 /opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mfloat-abi=hard -mfpu=vfp -mfloat-abi=hard -mfpu=vfp -mtune=arm1176jzf-s -marm -mlibarch=armv6zk+fp -march=armv6zk+fp -auxbase-strip CMakeFiles/cmTC_4bfa9.dir/CMakeCXXCompilerABI.cpp.obj -g -g -O0 -O0 -version -fno-exceptions -fno-rtti -o /var/folders/n5/py90dwr90vg86snbhzpz_klw0000gn/T//ccejFiNA.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'RPI0=1' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp'  '-mtune=arm1176jzf-s' '-fno-exceptions' '-fno-rtti' '-v' '-o' 'CMakeFiles/cmTC_c2beb.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-marm' '-mlibarch=armv6zk+fp' '-march=armv6zk+fp']
+        ignore line: [ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1plus -quiet -v -imultilib arm/v5te/hard -iprefix /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/ -isysroot /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi -D__USES_INITFINI__ -D RPI0=1 /opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mfloat-abi=hard -mfpu=vfp -mfloat-abi=hard -mfpu=vfp -mtune=arm1176jzf-s -marm -mlibarch=armv6zk+fp -march=armv6zk+fp -auxbase-strip CMakeFiles/cmTC_c2beb.dir/CMakeCXXCompilerABI.cpp.obj -g -g -O0 -O0 -version -fno-exceptions -fno-rtti -o /var/folders/n5/py90dwr90vg86snbhzpz_klw0000gn/T//ccUknFTv.s]
         ignore line: [GNU C++14 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)]
         ignore line: [	compiled by GNU C version 4.2.1 Compatible Apple LLVM 11.0.0 (clang-1100.0.33.17)  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
         ignore line: []
@@ -220,18 +220,18 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: aef279e1140f94be80a6badcc599c728]
-        ignore line: [COLLECT_GCC_OPTIONS='-D' 'RPI0=1' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp'  '-mtune=arm1176jzf-s' '-fno-exceptions' '-fno-rtti' '-v' '-o' 'CMakeFiles/cmTC_4bfa9.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-marm' '-mlibarch=armv6zk+fp' '-march=armv6zk+fp']
-        ignore line: [ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as -v -march=armv6zk -mfloat-abi=hard -mfloat-abi=hard -mfpu=vfp -mfpu=vfp -meabi=5 -o CMakeFiles/cmTC_4bfa9.dir/CMakeCXXCompilerABI.cpp.obj /var/folders/n5/py90dwr90vg86snbhzpz_klw0000gn/T//ccejFiNA.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'RPI0=1' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp'  '-mtune=arm1176jzf-s' '-fno-exceptions' '-fno-rtti' '-v' '-o' 'CMakeFiles/cmTC_c2beb.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-marm' '-mlibarch=armv6zk+fp' '-march=armv6zk+fp']
+        ignore line: [ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as -v -march=armv6zk -mfloat-abi=hard -mfloat-abi=hard -mfpu=vfp -mfpu=vfp -meabi=5 -o CMakeFiles/cmTC_c2beb.dir/CMakeCXXCompilerABI.cpp.obj /var/folders/n5/py90dwr90vg86snbhzpz_klw0000gn/T//ccUknFTv.s]
         ignore line: [GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621]
         ignore line: [COMPILER_PATH=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/]
         ignore line: [LIBRARY_PATH=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/arm/v5te/hard/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/arm/v5te/hard/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib/arm/v5te/hard/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-D' 'RPI0=1' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp'  '-mtune=arm1176jzf-s' '-fno-exceptions' '-fno-rtti' '-v' '-o' 'CMakeFiles/cmTC_4bfa9.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-marm' '-mlibarch=armv6zk+fp' '-march=armv6zk+fp']
-        ignore line: [Linking CXX static library libcmTC_4bfa9.a]
-        ignore line: [/opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -P CMakeFiles/cmTC_4bfa9.dir/cmake_clean_target.cmake]
-        ignore line: [/opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4bfa9.dir/link.txt --verbose=1]
-        ignore line: [/opt/homebrew/bin/arm-none-eabi-ar qc libcmTC_4bfa9.a CMakeFiles/cmTC_4bfa9.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: [/opt/homebrew/bin/arm-none-eabi-ranlib libcmTC_4bfa9.a]
-        ignore line: [gmake[1]: Leaving directory '/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles/CMakeScratch/TryCompile-AxW3zF']
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'RPI0=1' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp'  '-mtune=arm1176jzf-s' '-fno-exceptions' '-fno-rtti' '-v' '-o' 'CMakeFiles/cmTC_c2beb.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-marm' '-mlibarch=armv6zk+fp' '-march=armv6zk+fp']
+        ignore line: [Linking CXX static library libcmTC_c2beb.a]
+        ignore line: [/opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -P CMakeFiles/cmTC_c2beb.dir/cmake_clean_target.cmake]
+        ignore line: [/opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2beb.dir/link.txt --verbose=1]
+        ignore line: [/opt/homebrew/bin/arm-none-eabi-ar qc libcmTC_c2beb.a CMakeFiles/cmTC_c2beb.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [/opt/homebrew/bin/arm-none-eabi-ranlib libcmTC_c2beb.a]
+        ignore line: [gmake[1]: Leaving directory '/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles/CMakeScratch/TryCompile-bV42On']
         ignore line: []
         ignore line: []
         implicit libs: []
@@ -249,21 +249,21 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles/CMakeScratch/TryCompile-8Ri83H"
-      binary: "/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles/CMakeScratch/TryCompile-8Ri83H"
+      source: "/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles/CMakeScratch/TryCompile-1ZU8Cs"
+      binary: "/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles/CMakeScratch/TryCompile-1ZU8Cs"
     cmakeVariables:
       CMAKE_C_FLAGS: " -O0 -g -nostartfiles -mfloat-abi=hard -mfpu=vfp -march=armv6zk -mtune=arm1176jzf-s -O0 -g -nostartfiles -mfloat-abi=hard -mfpu=vfp -march=armv6zk -mtune=arm1176jzf-s"
     buildResult:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles/CMakeScratch/TryCompile-8Ri83H'
+        Change Dir: '/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles/CMakeScratch/TryCompile-1ZU8Cs'
         
-        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_58f75/fast
-        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_58f75.dir/build.make CMakeFiles/cmTC_58f75.dir/build
-        gmake[1]: Entering directory '/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles/CMakeScratch/TryCompile-8Ri83H'
-        Building C object CMakeFiles/cmTC_58f75.dir/CMakeCCompilerABI.c.obj
-        /opt/homebrew/bin/arm-none-eabi-gcc -DRPI0=1  -O0 -g -nostartfiles -mfloat-abi=hard -mfpu=vfp -march=armv6zk -mtune=arm1176jzf-s -O0 -g -nostartfiles -mfloat-abi=hard -mfpu=vfp -march=armv6zk -mtune=arm1176jzf-s    -v -o CMakeFiles/cmTC_58f75.dir/CMakeCCompilerABI.c.obj -c /opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_7a9c5/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_7a9c5.dir/build.make CMakeFiles/cmTC_7a9c5.dir/build
+        gmake[1]: Entering directory '/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles/CMakeScratch/TryCompile-1ZU8Cs'
+        Building C object CMakeFiles/cmTC_7a9c5.dir/CMakeCCompilerABI.c.obj
+        /opt/homebrew/bin/arm-none-eabi-gcc -DRPI0=1  -O0 -g -nostartfiles -mfloat-abi=hard -mfpu=vfp -march=armv6zk -mtune=arm1176jzf-s -O0 -g -nostartfiles -mfloat-abi=hard -mfpu=vfp -march=armv6zk -mtune=arm1176jzf-s    -v -o CMakeFiles/cmTC_7a9c5.dir/CMakeCCompilerABI.c.obj -c /opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/opt/homebrew/bin/arm-none-eabi-gcc
         Target: arm-none-eabi
@@ -271,8 +271,8 @@ events:
         Thread model: single
         Supported LTO compression algorithms: zlib
         gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) 
-        COLLECT_GCC_OPTIONS='-D' 'RPI0=1' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp'  '-mtune=arm1176jzf-s' '-v' '-o' 'CMakeFiles/cmTC_58f75.dir/CMakeCCompilerABI.c.obj' '-c' '-marm' '-mlibarch=armv6zk+fp' '-march=armv6zk+fp'
-         /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1 -quiet -v -imultilib arm/v5te/hard -iprefix /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/ -isysroot /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi -D__USES_INITFINI__ -D RPI0=1 /opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mfloat-abi=hard -mfpu=vfp -mfloat-abi=hard -mfpu=vfp -mtune=arm1176jzf-s -marm -mlibarch=armv6zk+fp -march=armv6zk+fp -auxbase-strip CMakeFiles/cmTC_58f75.dir/CMakeCCompilerABI.c.obj -g -g -O0 -O0 -version -o /var/folders/n5/py90dwr90vg86snbhzpz_klw0000gn/T//cc34XviX.s
+        COLLECT_GCC_OPTIONS='-D' 'RPI0=1' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp'  '-mtune=arm1176jzf-s' '-v' '-o' 'CMakeFiles/cmTC_7a9c5.dir/CMakeCCompilerABI.c.obj' '-c' '-marm' '-mlibarch=armv6zk+fp' '-march=armv6zk+fp'
+         /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1 -quiet -v -imultilib arm/v5te/hard -iprefix /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/ -isysroot /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi -D__USES_INITFINI__ -D RPI0=1 /opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mfloat-abi=hard -mfpu=vfp -mfloat-abi=hard -mfpu=vfp -mtune=arm1176jzf-s -marm -mlibarch=armv6zk+fp -march=armv6zk+fp -auxbase-strip CMakeFiles/cmTC_7a9c5.dir/CMakeCCompilerABI.c.obj -g -g -O0 -O0 -version -o /var/folders/n5/py90dwr90vg86snbhzpz_klw0000gn/T//ccUJmk0s.s
         GNU C17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)
         	compiled by GNU C version 4.2.1 Compatible Apple LLVM 11.0.0 (clang-1100.0.33.17), GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
         
@@ -293,18 +293,18 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: 733728c033f099ebc66962b91852e3eb
-        COLLECT_GCC_OPTIONS='-D' 'RPI0=1' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp'  '-mtune=arm1176jzf-s' '-v' '-o' 'CMakeFiles/cmTC_58f75.dir/CMakeCCompilerABI.c.obj' '-c' '-marm' '-mlibarch=armv6zk+fp' '-march=armv6zk+fp'
-         /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as -v -march=armv6zk -mfloat-abi=hard -mfloat-abi=hard -mfpu=vfp -mfpu=vfp -meabi=5 -o CMakeFiles/cmTC_58f75.dir/CMakeCCompilerABI.c.obj /var/folders/n5/py90dwr90vg86snbhzpz_klw0000gn/T//cc34XviX.s
+        COLLECT_GCC_OPTIONS='-D' 'RPI0=1' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp'  '-mtune=arm1176jzf-s' '-v' '-o' 'CMakeFiles/cmTC_7a9c5.dir/CMakeCCompilerABI.c.obj' '-c' '-marm' '-mlibarch=armv6zk+fp' '-march=armv6zk+fp'
+         /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as -v -march=armv6zk -mfloat-abi=hard -mfloat-abi=hard -mfpu=vfp -mfpu=vfp -meabi=5 -o CMakeFiles/cmTC_7a9c5.dir/CMakeCCompilerABI.c.obj /var/folders/n5/py90dwr90vg86snbhzpz_klw0000gn/T//ccUJmk0s.s
         GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621
         COMPILER_PATH=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/
         LIBRARY_PATH=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/arm/v5te/hard/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/arm/v5te/hard/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib/arm/v5te/hard/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib/
-        COLLECT_GCC_OPTIONS='-D' 'RPI0=1' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp'  '-mtune=arm1176jzf-s' '-v' '-o' 'CMakeFiles/cmTC_58f75.dir/CMakeCCompilerABI.c.obj' '-c' '-marm' '-mlibarch=armv6zk+fp' '-march=armv6zk+fp'
-        Linking C static library libcmTC_58f75.a
-        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -P CMakeFiles/cmTC_58f75.dir/cmake_clean_target.cmake
-        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58f75.dir/link.txt --verbose=1
-        /opt/homebrew/bin/arm-none-eabi-ar qc libcmTC_58f75.a CMakeFiles/cmTC_58f75.dir/CMakeCCompilerABI.c.obj
-        /opt/homebrew/bin/arm-none-eabi-ranlib libcmTC_58f75.a
-        gmake[1]: Leaving directory '/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles/CMakeScratch/TryCompile-8Ri83H'
+        COLLECT_GCC_OPTIONS='-D' 'RPI0=1' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp'  '-mtune=arm1176jzf-s' '-v' '-o' 'CMakeFiles/cmTC_7a9c5.dir/CMakeCCompilerABI.c.obj' '-c' '-marm' '-mlibarch=armv6zk+fp' '-march=armv6zk+fp'
+        Linking C static library libcmTC_7a9c5.a
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -P CMakeFiles/cmTC_7a9c5.dir/cmake_clean_target.cmake
+        /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7a9c5.dir/link.txt --verbose=1
+        /opt/homebrew/bin/arm-none-eabi-ar qc libcmTC_7a9c5.a CMakeFiles/cmTC_7a9c5.dir/CMakeCCompilerABI.c.obj
+        /opt/homebrew/bin/arm-none-eabi-ranlib libcmTC_7a9c5.a
+        gmake[1]: Leaving directory '/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles/CMakeScratch/TryCompile-1ZU8Cs'
         
       exitCode: 0
   -
@@ -337,13 +337,13 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: '/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles/CMakeScratch/TryCompile-8Ri83H']
+        ignore line: [Change Dir: '/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles/CMakeScratch/TryCompile-1ZU8Cs']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_58f75/fast]
-        ignore line: [/opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_58f75.dir/build.make CMakeFiles/cmTC_58f75.dir/build]
-        ignore line: [gmake[1]: Entering directory '/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles/CMakeScratch/TryCompile-8Ri83H']
-        ignore line: [Building C object CMakeFiles/cmTC_58f75.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [/opt/homebrew/bin/arm-none-eabi-gcc -DRPI0=1  -O0 -g -nostartfiles -mfloat-abi=hard -mfpu=vfp -march=armv6zk -mtune=arm1176jzf-s -O0 -g -nostartfiles -mfloat-abi=hard -mfpu=vfp -march=armv6zk -mtune=arm1176jzf-s    -v -o CMakeFiles/cmTC_58f75.dir/CMakeCCompilerABI.c.obj -c /opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_7a9c5/fast]
+        ignore line: [/opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_7a9c5.dir/build.make CMakeFiles/cmTC_7a9c5.dir/build]
+        ignore line: [gmake[1]: Entering directory '/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles/CMakeScratch/TryCompile-1ZU8Cs']
+        ignore line: [Building C object CMakeFiles/cmTC_7a9c5.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [/opt/homebrew/bin/arm-none-eabi-gcc -DRPI0=1  -O0 -g -nostartfiles -mfloat-abi=hard -mfpu=vfp -march=armv6zk -mtune=arm1176jzf-s -O0 -g -nostartfiles -mfloat-abi=hard -mfpu=vfp -march=armv6zk -mtune=arm1176jzf-s    -v -o CMakeFiles/cmTC_7a9c5.dir/CMakeCCompilerABI.c.obj -c /opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/opt/homebrew/bin/arm-none-eabi-gcc]
         ignore line: [Target: arm-none-eabi]
@@ -351,8 +351,8 @@ events:
         ignore line: [Thread model: single]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 10.3.1 20210824 (release) (GNU Arm Embedded Toolchain 10.3-2021.10) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-D' 'RPI0=1' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp'  '-mtune=arm1176jzf-s' '-v' '-o' 'CMakeFiles/cmTC_58f75.dir/CMakeCCompilerABI.c.obj' '-c' '-marm' '-mlibarch=armv6zk+fp' '-march=armv6zk+fp']
-        ignore line: [ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1 -quiet -v -imultilib arm/v5te/hard -iprefix /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/ -isysroot /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi -D__USES_INITFINI__ -D RPI0=1 /opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mfloat-abi=hard -mfpu=vfp -mfloat-abi=hard -mfpu=vfp -mtune=arm1176jzf-s -marm -mlibarch=armv6zk+fp -march=armv6zk+fp -auxbase-strip CMakeFiles/cmTC_58f75.dir/CMakeCCompilerABI.c.obj -g -g -O0 -O0 -version -o /var/folders/n5/py90dwr90vg86snbhzpz_klw0000gn/T//cc34XviX.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'RPI0=1' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp'  '-mtune=arm1176jzf-s' '-v' '-o' 'CMakeFiles/cmTC_7a9c5.dir/CMakeCCompilerABI.c.obj' '-c' '-marm' '-mlibarch=armv6zk+fp' '-march=armv6zk+fp']
+        ignore line: [ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/cc1 -quiet -v -imultilib arm/v5te/hard -iprefix /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/ -isysroot /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi -D__USES_INITFINI__ -D RPI0=1 /opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mfloat-abi=hard -mfpu=vfp -mfloat-abi=hard -mfpu=vfp -mtune=arm1176jzf-s -marm -mlibarch=armv6zk+fp -march=armv6zk+fp -auxbase-strip CMakeFiles/cmTC_7a9c5.dir/CMakeCCompilerABI.c.obj -g -g -O0 -O0 -version -o /var/folders/n5/py90dwr90vg86snbhzpz_klw0000gn/T//ccUJmk0s.s]
         ignore line: [GNU C17 (GNU Arm Embedded Toolchain 10.3-2021.10) version 10.3.1 20210824 (release) (arm-none-eabi)]
         ignore line: [	compiled by GNU C version 4.2.1 Compatible Apple LLVM 11.0.0 (clang-1100.0.33.17)  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
         ignore line: []
@@ -373,18 +373,18 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: 733728c033f099ebc66962b91852e3eb]
-        ignore line: [COLLECT_GCC_OPTIONS='-D' 'RPI0=1' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp'  '-mtune=arm1176jzf-s' '-v' '-o' 'CMakeFiles/cmTC_58f75.dir/CMakeCCompilerABI.c.obj' '-c' '-marm' '-mlibarch=armv6zk+fp' '-march=armv6zk+fp']
-        ignore line: [ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as -v -march=armv6zk -mfloat-abi=hard -mfloat-abi=hard -mfpu=vfp -mfpu=vfp -meabi=5 -o CMakeFiles/cmTC_58f75.dir/CMakeCCompilerABI.c.obj /var/folders/n5/py90dwr90vg86snbhzpz_klw0000gn/T//cc34XviX.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'RPI0=1' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp'  '-mtune=arm1176jzf-s' '-v' '-o' 'CMakeFiles/cmTC_7a9c5.dir/CMakeCCompilerABI.c.obj' '-c' '-marm' '-mlibarch=armv6zk+fp' '-march=armv6zk+fp']
+        ignore line: [ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/as -v -march=armv6zk -mfloat-abi=hard -mfloat-abi=hard -mfpu=vfp -mfpu=vfp -meabi=5 -o CMakeFiles/cmTC_7a9c5.dir/CMakeCCompilerABI.c.obj /var/folders/n5/py90dwr90vg86snbhzpz_klw0000gn/T//ccUJmk0s.s]
         ignore line: [GNU assembler version 2.36.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10.3-2021.10) 2.36.1.20210621]
         ignore line: [COMPILER_PATH=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/]
         ignore line: [LIBRARY_PATH=/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/arm/v5te/hard/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/arm/v5te/hard/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib/arm/v5te/hard/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/:/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../arm-none-eabi/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-D' 'RPI0=1' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp'  '-mtune=arm1176jzf-s' '-v' '-o' 'CMakeFiles/cmTC_58f75.dir/CMakeCCompilerABI.c.obj' '-c' '-marm' '-mlibarch=armv6zk+fp' '-march=armv6zk+fp']
-        ignore line: [Linking C static library libcmTC_58f75.a]
-        ignore line: [/opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -P CMakeFiles/cmTC_58f75.dir/cmake_clean_target.cmake]
-        ignore line: [/opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58f75.dir/link.txt --verbose=1]
-        ignore line: [/opt/homebrew/bin/arm-none-eabi-ar qc libcmTC_58f75.a CMakeFiles/cmTC_58f75.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [/opt/homebrew/bin/arm-none-eabi-ranlib libcmTC_58f75.a]
-        ignore line: [gmake[1]: Leaving directory '/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles/CMakeScratch/TryCompile-8Ri83H']
+        ignore line: [COLLECT_GCC_OPTIONS='-D' 'RPI0=1' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp' '-O0' '-g' '-nostartfiles' '-mfloat-abi=hard' '-mfpu=vfp'  '-mtune=arm1176jzf-s' '-v' '-o' 'CMakeFiles/cmTC_7a9c5.dir/CMakeCCompilerABI.c.obj' '-c' '-marm' '-mlibarch=armv6zk+fp' '-march=armv6zk+fp']
+        ignore line: [Linking C static library libcmTC_7a9c5.a]
+        ignore line: [/opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -P CMakeFiles/cmTC_7a9c5.dir/cmake_clean_target.cmake]
+        ignore line: [/opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7a9c5.dir/link.txt --verbose=1]
+        ignore line: [/opt/homebrew/bin/arm-none-eabi-ar qc libcmTC_7a9c5.a CMakeFiles/cmTC_7a9c5.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [/opt/homebrew/bin/arm-none-eabi-ranlib libcmTC_7a9c5.a]
+        ignore line: [gmake[1]: Leaving directory '/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/build/CMakeFiles/CMakeScratch/TryCompile-1ZU8Cs']
         ignore line: []
         ignore line: []
         implicit libs: []

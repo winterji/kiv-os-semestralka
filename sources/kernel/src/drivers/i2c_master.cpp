@@ -1,6 +1,8 @@
 #include <drivers/i2c_master.h>
 
 #include <drivers/gpio.h>
+#include <stdfile.h>
+#include <stdstring.h>
 
 CI2C_MASTER sI2C_MASTER0(hal::BSC1_Base, 0, 1);
 CI2C_MASTER sI2C_MASTER1(hal::BSC1_Base, 2, 3);
@@ -43,7 +45,6 @@ void CI2C_MASTER::Wait_Ready()
 
 void CI2C_MASTER::Send(uint16_t addr, const char* buffer, uint32_t len)
 {
-    Reg(hal::BSC_Reg::Slave_Address) = addr;
     Reg(hal::BSC_Reg::Data_Length) = len;
 
     volatile uint32_t& status_reg = Reg(hal::BSC_Reg::Status);
@@ -54,18 +55,46 @@ void CI2C_MASTER::Send(uint16_t addr, const char* buffer, uint32_t len)
         Reg(hal::BSC_Reg::Data_FIFO) = buffer[i];
 
     Wait_Ready();
+
+    // uint32_t log = pipe("log", 128);
+    // char pom[64];
+    // bzero(pom, 64);
+    // strncpy(pom, "I2C MASTER sent: ", 17);
+    // concat(pom, buffer);
+    // concat(pom, "\n");
+    // write(log, pom, strlen(pom));
 }
 
 void CI2C_MASTER::Receive(uint16_t addr, char* buffer, uint32_t len)
 {
-    Reg(hal::BSC_Reg::Slave_Address) = addr;
+    uint32_t log_fd = pipe("log", 128);
     Reg(hal::BSC_Reg::Data_Length) = len;
 
-    Reg(hal::BSC_Reg::Status) = (1 << 9) | (1 << 8) | (1 << 1); // reset "slave clock hold", "slave fail" a "status" bitu
-    Reg(hal::BSC_Reg::Control) = (1 << 15) | (1 << 7) | (1 << 0); // zapoceti cteni (enable bsc + clear fifo + start transfer + read)
+    volatile uint32_t& status_reg = Reg(hal::BSC_Reg::Status);
+    status_reg = (1 << 9) | (1 << 8) | (1 << 1); // reset "slave clock hold", "slave fail" a "status" bitu
+    Reg(hal::BSC_Reg::Control) = (1 << 15) | (1 << 7) | (1 << 5) | (1 << 0); // zapoceti cteni (enable bsc + clear fifo + start transfer + read)
 
     Wait_Ready();
 
     for (uint32_t i = 0; i < len; i++)
         buffer[i] = Reg(hal::BSC_Reg::Data_FIFO);
+
+    
+    if (status_reg & (1 << 8)) {
+        // en error with slave
+        write(log_fd, "I2C Master error with slave\n", 29);
+    }
+
+    // char pom[64];
+    // bzero(pom, 64);
+    // strncpy(pom, "I2C MASTER received: ", 21);
+    // concat(pom, buffer);
+    // concat(pom, "\n");
+    // write(log_fd, pom, strlen(pom));
+
+}
+
+void CI2C_MASTER::Set_Address(uint8_t addr)
+{
+    Reg(hal::BSC_Reg::Slave_Address) = addr;
 }
