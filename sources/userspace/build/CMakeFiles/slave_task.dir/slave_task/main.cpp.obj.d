@@ -13,4 +13,5 @@ CMakeFiles/slave_task.dir/slave_task/main.cpp.obj: \
  /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/../kernel/include/board/rpi0/hal/peripherals.h \
  /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/../kernel/include/drivers/i2c_slave.h \
  /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/../kernel/include/drivers/i2c.h \
- /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/../kernel/include/drivers/bridges/i2c_defs.h
+ /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/../kernel/include/drivers/bridges/i2c_defs.h \
+ /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/../kernel/include/drivers/i2c_master.h

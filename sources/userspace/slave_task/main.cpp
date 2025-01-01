@@ -4,6 +4,7 @@
 
 #include <drivers/gpio.h>
 #include <drivers/i2c_slave.h>
+#include <drivers/i2c_master.h>
 
 constexpr float UPPER_BOUND = 11.0F;
 constexpr float LOWER_BOUND = 3.5F;
@@ -13,13 +14,16 @@ constexpr uint32_t TARGET_ADDRESS = 1;
 constexpr CI2C_Mode DESIRED_ROLE = CI2C_Mode::Slave;
 CI2C_Mode agreed_role = CI2C_Mode::Undefined;
 
-uint32_t log_fd, slave;
+uint32_t log_fd, slave, i2c_fd;
 
 const float random_values[] = {
     6.71f, 4.23f, 5.12f, 3.99f, 2.22f, 7.20f, 11.93f, 10.96f
 };
 const uint32_t random_values_len = 8;
 float prev_value = random_values[0];
+
+float received_values[32];
+uint32_t received_values_len = 0;
 
 void prep_msg(char* buff, const char* msg) {
     switch (agreed_role)
@@ -70,7 +74,7 @@ void send_data(const float value)
     }
     memcpy(&value, msg + 1, 4);
     msg[5] = '\0';
-    write(slave, msg, 6);
+    write(i2c_fd, msg, 6);
 }
 
 void send_value(const float value) {
@@ -140,9 +144,9 @@ bool set_roles(CI2C_Mode desired_role)
         break;
     }
 
-    write(slave, role, 4);
+    write(i2c_fd, role, 4);
     while (strlen(buff) == 0) {
-        read(slave, buff, 4);
+        read(i2c_fd, buff, 4);
         sleep(0x100);
     }
 
@@ -161,6 +165,75 @@ bool set_roles(CI2C_Mode desired_role)
     return agreed_role == desired_role;
 }
 
+void handle_data(char value_state, float value)
+{
+    char log_msg[32], value_str[16];
+    bzero(log_msg, 32);
+    bzero(value_str, 16);
+    strncpy(log_msg, "Received ", 10);
+    ftoa(value, value_str, 2);
+    concat(log_msg, value_str);
+    switch (value_state)
+    {
+    case 'v':
+        // vse v poradku
+        concat(log_msg, " - OK");
+        break;
+    case 'd':
+        // nebezpecna hodnota
+        concat(log_msg, " - DANGER");
+        break;
+    case 't':
+        // dalsi hodnota muze byt nebezpecna
+        concat(log_msg, " - WARNING");
+        break;
+    
+    }
+    concat(log_msg, "\n");
+    log(log_msg);
+}
+
+void receive_data()
+{
+    char buff[6], log_msg[32];
+    bzero(buff, 6);
+    bzero(log_msg, 32);
+    char value_state;
+    float value;
+
+    while (strlen(buff) == 0) {
+        read(i2c_fd, buff, 6);
+        sleep(0x100);
+    }
+
+    value_state = buff[0];
+    memcpy(buff + 1, &value, 4);
+
+    handle_data(value_state, value);
+}
+
+void master_task() {
+    char buff[9], msg[32];
+
+    for (;;) {
+        bzero(msg, 32);
+        bzero(buff, 9);
+        receive_data();
+
+        sleep(0x15000);
+    }
+}
+
+void slave_task() {
+    uint32_t counter = 0;
+    for (;;) {
+        send_value(random_values[counter]);
+        prev_value = random_values[counter];
+        counter = (counter + 1) % random_values_len;
+        sleep(0x15000);
+    }
+}
+
 int main(int argc, char** argv)
 {
     uint32_t counter = 0;
@@ -169,33 +242,46 @@ int main(int argc, char** argv)
 
     log_fd = pipe("log", 128);
 
-    log("Slave task started\n");
+    log("Task 1 started\n");
 
-    // start i2c connection
-    slave = open("DEV:i2c/2", NFile_Open_Mode::Read_Write);
-    if (slave == Invalid_Handle) {
-        log("Error opening I2C slave connection\n");
-        return 1;
+    // start i2c connection - primarly master
+    i2c_fd = open("DEV:i2c/1", NFile_Open_Mode::Read_Write);
+    if (i2c_fd == Invalid_Handle) {
+        // if master already opened, open slave
+        i2c_fd = open("DEV:i2c/2", NFile_Open_Mode::Read_Write);
+        if (i2c_fd == Invalid_Handle) {
+            log("Error opening I2C connection\n");
+            return 1;
+        }
     }
     // set addresses
     TI2C_IOCtl_Params params;
     params.address = ADDRESS;
     params.targetAdress = TARGET_ADDRESS;
-    ioctl(slave, NIOCtl_Operation::Set_Params, &params);
-    log("I2C connection slave started...\n");
+    ioctl(i2c_fd, NIOCtl_Operation::Set_Params, &params);
+    log("Task 1: I2C connection started...\n");
+
+    // slave = open("DEV:i2c/2", NFile_Open_Mode::Read_Write);
+    // if (slave == Invalid_Handle) {
+    //     log("Error opening I2C slave connection\n");
+    //     return 1;
+    // }
 
     sleep(0x100);
     set_roles(DESIRED_ROLE);
 
-    for (;;) {
-        send_value(random_values[counter]);
-        prev_value = random_values[counter];
-        counter = (counter + 1) % random_values_len;
-        sleep(0x15000);
+    switch (agreed_role)
+    {
+    case CI2C_Mode::Master:
+        master_task();
+        break;
+    case CI2C_Mode::Slave:
+        slave_task();
+        break;
     }
 
-    close(slave);
-    log("Open files closed in slave\n");
+    close(i2c_fd);
+    log("Open files closed in task 1\n");
     close(log_fd);
 
     return 0;
