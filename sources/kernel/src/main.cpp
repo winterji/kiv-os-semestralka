@@ -29,11 +29,11 @@ extern "C" unsigned int __sos_task_len;
 extern "C" unsigned char __logger_task[];
 extern "C" unsigned int __logger_task_len;
 
-extern "C" unsigned char __master_task[];
-extern "C" unsigned int __master_task_len;
+extern "C" unsigned char __glucose_task_1[];
+extern "C" unsigned int __glucose_task_1_len;
 
-extern "C" unsigned char __slave_task[];
-extern "C" unsigned int __slave_task_len;
+extern "C" unsigned char __glucose_task_2[];
+extern "C" unsigned int __glucose_task_2_len;
 
 extern "C" int _kernel_main(void)
 {
@@ -62,8 +62,8 @@ extern "C" int _kernel_main(void)
 	// TODO: presunuti do init procesu a nejake inicializacni sekce
 	sProcessMgr.Create_Process(__logger_task, __logger_task_len, false);
 
-	sProcessMgr.Create_Process(__master_task, __master_task_len, false);
-	sProcessMgr.Create_Process(__slave_task, __slave_task_len, false);
+	sProcessMgr.Create_Process(__glucose_task_1, __glucose_task_1_len, false);
+	sProcessMgr.Create_Process(__glucose_task_2, __glucose_task_2_len, false);
 	// sProcessMgr.Create_Process(reinterpret_cast<unsigned long>(&Process_I2C));
 
 

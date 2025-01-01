@@ -1,7 +1,7 @@
 #include "../../userspace/build/src_init_task.h"
 #include "../../userspace/build/src_sos_task.h"
-#include "../../userspace/build/src_master_task.h"
-#include "../../userspace/build/src_slave_task.h"
+#include "../../userspace/build/src_glucose_task_2.h"
+#include "../../userspace/build/src_glucose_task_1.h"
 #include "../../userspace/build/src_logger_task.h"
 
 // #include <stdstring.h>

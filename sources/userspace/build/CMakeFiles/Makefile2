@@ -66,8 +66,8 @@ CMAKE_BINARY_DIR = /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/
 all: CMakeFiles/init_task.dir/all
 all: CMakeFiles/sos_task.dir/all
 all: CMakeFiles/logger_task.dir/all
-all: CMakeFiles/master_task.dir/all
-all: CMakeFiles/slave_task.dir/all
+all: CMakeFiles/glucose_task_1.dir/all
+all: CMakeFiles/glucose_task_2.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -78,8 +78,8 @@ preinstall:
 clean: CMakeFiles/init_task.dir/clean
 clean: CMakeFiles/sos_task.dir/clean
 clean: CMakeFiles/logger_task.dir/clean
-clean: CMakeFiles/master_task.dir/clean
-clean: CMakeFiles/slave_task.dir/clean
+clean: CMakeFiles/glucose_task_1.dir/clean
+clean: CMakeFiles/glucose_task_2.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -89,7 +89,7 @@ clean: CMakeFiles/slave_task.dir/clean
 CMakeFiles/init_task.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/init_task.dir/build.make CMakeFiles/init_task.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/init_task.dir/build.make CMakeFiles/init_task.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target init_task"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/build/CMakeFiles --progress-num=11,12,13,14,15 "Built target init_task"
 .PHONY : CMakeFiles/init_task.dir/all
 
 # Build rule for subdir invocation for target.
@@ -141,7 +141,7 @@ CMakeFiles/sos_task.dir/clean:
 CMakeFiles/logger_task.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logger_task.dir/build.make CMakeFiles/logger_task.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logger_task.dir/build.make CMakeFiles/logger_task.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/build/CMakeFiles --progress-num=6,7,8,9,10 "Built target logger_task"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/build/CMakeFiles --progress-num=16,17,18,19,20 "Built target logger_task"
 .PHONY : CMakeFiles/logger_task.dir/all
 
 # Build rule for subdir invocation for target.
@@ -161,56 +161,56 @@ CMakeFiles/logger_task.dir/clean:
 .PHONY : CMakeFiles/logger_task.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/master_task.dir
+# Target rules for target CMakeFiles/glucose_task_1.dir
 
 # All Build rule for target.
-CMakeFiles/master_task.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/master_task.dir/build.make CMakeFiles/master_task.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/master_task.dir/build.make CMakeFiles/master_task.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/build/CMakeFiles --progress-num=11,12,13,14,15 "Built target master_task"
-.PHONY : CMakeFiles/master_task.dir/all
+CMakeFiles/glucose_task_1.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glucose_task_1.dir/build.make CMakeFiles/glucose_task_1.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glucose_task_1.dir/build.make CMakeFiles/glucose_task_1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target glucose_task_1"
+.PHONY : CMakeFiles/glucose_task_1.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/master_task.dir/rule: cmake_check_build_system
+CMakeFiles/glucose_task_1.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/build/CMakeFiles 5
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/master_task.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/glucose_task_1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/build/CMakeFiles 0
-.PHONY : CMakeFiles/master_task.dir/rule
+.PHONY : CMakeFiles/glucose_task_1.dir/rule
 
 # Convenience name for target.
-master_task: CMakeFiles/master_task.dir/rule
-.PHONY : master_task
+glucose_task_1: CMakeFiles/glucose_task_1.dir/rule
+.PHONY : glucose_task_1
 
 # clean rule for target.
-CMakeFiles/master_task.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/master_task.dir/build.make CMakeFiles/master_task.dir/clean
-.PHONY : CMakeFiles/master_task.dir/clean
+CMakeFiles/glucose_task_1.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glucose_task_1.dir/build.make CMakeFiles/glucose_task_1.dir/clean
+.PHONY : CMakeFiles/glucose_task_1.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/slave_task.dir
+# Target rules for target CMakeFiles/glucose_task_2.dir
 
 # All Build rule for target.
-CMakeFiles/slave_task.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/slave_task.dir/build.make CMakeFiles/slave_task.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/slave_task.dir/build.make CMakeFiles/slave_task.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/build/CMakeFiles --progress-num=16,17,18,19,20 "Built target slave_task"
-.PHONY : CMakeFiles/slave_task.dir/all
+CMakeFiles/glucose_task_2.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glucose_task_2.dir/build.make CMakeFiles/glucose_task_2.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glucose_task_2.dir/build.make CMakeFiles/glucose_task_2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/build/CMakeFiles --progress-num=6,7,8,9,10 "Built target glucose_task_2"
+.PHONY : CMakeFiles/glucose_task_2.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/slave_task.dir/rule: cmake_check_build_system
+CMakeFiles/glucose_task_2.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/build/CMakeFiles 5
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/slave_task.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/glucose_task_2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/build/CMakeFiles 0
-.PHONY : CMakeFiles/slave_task.dir/rule
+.PHONY : CMakeFiles/glucose_task_2.dir/rule
 
 # Convenience name for target.
-slave_task: CMakeFiles/slave_task.dir/rule
-.PHONY : slave_task
+glucose_task_2: CMakeFiles/glucose_task_2.dir/rule
+.PHONY : glucose_task_2
 
 # clean rule for target.
-CMakeFiles/slave_task.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/slave_task.dir/build.make CMakeFiles/slave_task.dir/clean
-.PHONY : CMakeFiles/slave_task.dir/clean
+CMakeFiles/glucose_task_2.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glucose_task_2.dir/build.make CMakeFiles/glucose_task_2.dir/clean
+.PHONY : CMakeFiles/glucose_task_2.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

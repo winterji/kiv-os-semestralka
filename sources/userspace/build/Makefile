@@ -156,30 +156,30 @@ logger_task/fast:
 .PHONY : logger_task/fast
 
 #=============================================================================
-# Target rules for targets named master_task
+# Target rules for targets named glucose_task_1
 
 # Build rule for target.
-master_task: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 master_task
-.PHONY : master_task
+glucose_task_1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glucose_task_1
+.PHONY : glucose_task_1
 
 # fast build rule for target.
-master_task/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/master_task.dir/build.make CMakeFiles/master_task.dir/build
-.PHONY : master_task/fast
+glucose_task_1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glucose_task_1.dir/build.make CMakeFiles/glucose_task_1.dir/build
+.PHONY : glucose_task_1/fast
 
 #=============================================================================
-# Target rules for targets named slave_task
+# Target rules for targets named glucose_task_2
 
 # Build rule for target.
-slave_task: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 slave_task
-.PHONY : slave_task
+glucose_task_2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glucose_task_2
+.PHONY : glucose_task_2
 
 # fast build rule for target.
-slave_task/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/slave_task.dir/build.make CMakeFiles/slave_task.dir/build
-.PHONY : slave_task/fast
+glucose_task_2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glucose_task_2.dir/build.make CMakeFiles/glucose_task_2.dir/build
+.PHONY : glucose_task_2/fast
 
 crt0.obj: crt0.c.obj
 .PHONY : crt0.obj
@@ -189,8 +189,8 @@ crt0.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/init_task.dir/build.make CMakeFiles/init_task.dir/crt0.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sos_task.dir/build.make CMakeFiles/sos_task.dir/crt0.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logger_task.dir/build.make CMakeFiles/logger_task.dir/crt0.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/master_task.dir/build.make CMakeFiles/master_task.dir/crt0.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/slave_task.dir/build.make CMakeFiles/slave_task.dir/crt0.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glucose_task_1.dir/build.make CMakeFiles/glucose_task_1.dir/crt0.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glucose_task_2.dir/build.make CMakeFiles/glucose_task_2.dir/crt0.c.obj
 .PHONY : crt0.c.obj
 
 crt0.i: crt0.c.i
@@ -201,8 +201,8 @@ crt0.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/init_task.dir/build.make CMakeFiles/init_task.dir/crt0.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sos_task.dir/build.make CMakeFiles/sos_task.dir/crt0.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logger_task.dir/build.make CMakeFiles/logger_task.dir/crt0.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/master_task.dir/build.make CMakeFiles/master_task.dir/crt0.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/slave_task.dir/build.make CMakeFiles/slave_task.dir/crt0.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glucose_task_1.dir/build.make CMakeFiles/glucose_task_1.dir/crt0.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glucose_task_2.dir/build.make CMakeFiles/glucose_task_2.dir/crt0.c.i
 .PHONY : crt0.c.i
 
 crt0.s: crt0.c.s
@@ -213,8 +213,8 @@ crt0.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/init_task.dir/build.make CMakeFiles/init_task.dir/crt0.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sos_task.dir/build.make CMakeFiles/sos_task.dir/crt0.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logger_task.dir/build.make CMakeFiles/logger_task.dir/crt0.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/master_task.dir/build.make CMakeFiles/master_task.dir/crt0.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/slave_task.dir/build.make CMakeFiles/slave_task.dir/crt0.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glucose_task_1.dir/build.make CMakeFiles/glucose_task_1.dir/crt0.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glucose_task_2.dir/build.make CMakeFiles/glucose_task_2.dir/crt0.c.s
 .PHONY : crt0.c.s
 
 crt0.obj: crt0.s.obj
@@ -225,8 +225,8 @@ crt0.s.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/init_task.dir/build.make CMakeFiles/init_task.dir/crt0.s.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sos_task.dir/build.make CMakeFiles/sos_task.dir/crt0.s.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logger_task.dir/build.make CMakeFiles/logger_task.dir/crt0.s.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/master_task.dir/build.make CMakeFiles/master_task.dir/crt0.s.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/slave_task.dir/build.make CMakeFiles/slave_task.dir/crt0.s.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glucose_task_1.dir/build.make CMakeFiles/glucose_task_1.dir/crt0.s.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glucose_task_2.dir/build.make CMakeFiles/glucose_task_2.dir/crt0.s.obj
 .PHONY : crt0.s.obj
 
 cxxabi.obj: cxxabi.cpp.obj
@@ -237,8 +237,8 @@ cxxabi.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/init_task.dir/build.make CMakeFiles/init_task.dir/cxxabi.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sos_task.dir/build.make CMakeFiles/sos_task.dir/cxxabi.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logger_task.dir/build.make CMakeFiles/logger_task.dir/cxxabi.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/master_task.dir/build.make CMakeFiles/master_task.dir/cxxabi.cpp.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/slave_task.dir/build.make CMakeFiles/slave_task.dir/cxxabi.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glucose_task_1.dir/build.make CMakeFiles/glucose_task_1.dir/cxxabi.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glucose_task_2.dir/build.make CMakeFiles/glucose_task_2.dir/cxxabi.cpp.obj
 .PHONY : cxxabi.cpp.obj
 
 cxxabi.i: cxxabi.cpp.i
@@ -249,8 +249,8 @@ cxxabi.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/init_task.dir/build.make CMakeFiles/init_task.dir/cxxabi.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sos_task.dir/build.make CMakeFiles/sos_task.dir/cxxabi.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logger_task.dir/build.make CMakeFiles/logger_task.dir/cxxabi.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/master_task.dir/build.make CMakeFiles/master_task.dir/cxxabi.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/slave_task.dir/build.make CMakeFiles/slave_task.dir/cxxabi.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glucose_task_1.dir/build.make CMakeFiles/glucose_task_1.dir/cxxabi.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glucose_task_2.dir/build.make CMakeFiles/glucose_task_2.dir/cxxabi.cpp.i
 .PHONY : cxxabi.cpp.i
 
 cxxabi.s: cxxabi.cpp.s
@@ -261,9 +261,57 @@ cxxabi.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/init_task.dir/build.make CMakeFiles/init_task.dir/cxxabi.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sos_task.dir/build.make CMakeFiles/sos_task.dir/cxxabi.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logger_task.dir/build.make CMakeFiles/logger_task.dir/cxxabi.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/master_task.dir/build.make CMakeFiles/master_task.dir/cxxabi.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/slave_task.dir/build.make CMakeFiles/slave_task.dir/cxxabi.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glucose_task_1.dir/build.make CMakeFiles/glucose_task_1.dir/cxxabi.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glucose_task_2.dir/build.make CMakeFiles/glucose_task_2.dir/cxxabi.cpp.s
 .PHONY : cxxabi.cpp.s
+
+glucose_task_1/main.obj: glucose_task_1/main.cpp.obj
+.PHONY : glucose_task_1/main.obj
+
+# target to build an object file
+glucose_task_1/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glucose_task_1.dir/build.make CMakeFiles/glucose_task_1.dir/glucose_task_1/main.cpp.obj
+.PHONY : glucose_task_1/main.cpp.obj
+
+glucose_task_1/main.i: glucose_task_1/main.cpp.i
+.PHONY : glucose_task_1/main.i
+
+# target to preprocess a source file
+glucose_task_1/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glucose_task_1.dir/build.make CMakeFiles/glucose_task_1.dir/glucose_task_1/main.cpp.i
+.PHONY : glucose_task_1/main.cpp.i
+
+glucose_task_1/main.s: glucose_task_1/main.cpp.s
+.PHONY : glucose_task_1/main.s
+
+# target to generate assembly for a file
+glucose_task_1/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glucose_task_1.dir/build.make CMakeFiles/glucose_task_1.dir/glucose_task_1/main.cpp.s
+.PHONY : glucose_task_1/main.cpp.s
+
+glucose_task_2/main.obj: glucose_task_2/main.cpp.obj
+.PHONY : glucose_task_2/main.obj
+
+# target to build an object file
+glucose_task_2/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glucose_task_2.dir/build.make CMakeFiles/glucose_task_2.dir/glucose_task_2/main.cpp.obj
+.PHONY : glucose_task_2/main.cpp.obj
+
+glucose_task_2/main.i: glucose_task_2/main.cpp.i
+.PHONY : glucose_task_2/main.i
+
+# target to preprocess a source file
+glucose_task_2/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glucose_task_2.dir/build.make CMakeFiles/glucose_task_2.dir/glucose_task_2/main.cpp.i
+.PHONY : glucose_task_2/main.cpp.i
+
+glucose_task_2/main.s: glucose_task_2/main.cpp.s
+.PHONY : glucose_task_2/main.s
+
+# target to generate assembly for a file
+glucose_task_2/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glucose_task_2.dir/build.make CMakeFiles/glucose_task_2.dir/glucose_task_2/main.cpp.s
+.PHONY : glucose_task_2/main.cpp.s
 
 init_task/main.obj: init_task/main.cpp.obj
 .PHONY : init_task/main.obj
@@ -313,54 +361,6 @@ logger_task/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logger_task.dir/build.make CMakeFiles/logger_task.dir/logger_task/main.cpp.s
 .PHONY : logger_task/main.cpp.s
 
-master_task/main.obj: master_task/main.cpp.obj
-.PHONY : master_task/main.obj
-
-# target to build an object file
-master_task/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/master_task.dir/build.make CMakeFiles/master_task.dir/master_task/main.cpp.obj
-.PHONY : master_task/main.cpp.obj
-
-master_task/main.i: master_task/main.cpp.i
-.PHONY : master_task/main.i
-
-# target to preprocess a source file
-master_task/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/master_task.dir/build.make CMakeFiles/master_task.dir/master_task/main.cpp.i
-.PHONY : master_task/main.cpp.i
-
-master_task/main.s: master_task/main.cpp.s
-.PHONY : master_task/main.s
-
-# target to generate assembly for a file
-master_task/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/master_task.dir/build.make CMakeFiles/master_task.dir/master_task/main.cpp.s
-.PHONY : master_task/main.cpp.s
-
-slave_task/main.obj: slave_task/main.cpp.obj
-.PHONY : slave_task/main.obj
-
-# target to build an object file
-slave_task/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/slave_task.dir/build.make CMakeFiles/slave_task.dir/slave_task/main.cpp.obj
-.PHONY : slave_task/main.cpp.obj
-
-slave_task/main.i: slave_task/main.cpp.i
-.PHONY : slave_task/main.i
-
-# target to preprocess a source file
-slave_task/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/slave_task.dir/build.make CMakeFiles/slave_task.dir/slave_task/main.cpp.i
-.PHONY : slave_task/main.cpp.i
-
-slave_task/main.s: slave_task/main.cpp.s
-.PHONY : slave_task/main.s
-
-# target to generate assembly for a file
-slave_task/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/slave_task.dir/build.make CMakeFiles/slave_task.dir/slave_task/main.cpp.s
-.PHONY : slave_task/main.cpp.s
-
 sos_task/main.obj: sos_task/main.cpp.obj
 .PHONY : sos_task/main.obj
 
@@ -393,10 +393,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... glucose_task_1"
+	@echo "... glucose_task_2"
 	@echo "... init_task"
 	@echo "... logger_task"
-	@echo "... master_task"
-	@echo "... slave_task"
 	@echo "... sos_task"
 	@echo "... crt0.obj"
 	@echo "... crt0.i"
@@ -405,18 +405,18 @@ help:
 	@echo "... cxxabi.obj"
 	@echo "... cxxabi.i"
 	@echo "... cxxabi.s"
+	@echo "... glucose_task_1/main.obj"
+	@echo "... glucose_task_1/main.i"
+	@echo "... glucose_task_1/main.s"
+	@echo "... glucose_task_2/main.obj"
+	@echo "... glucose_task_2/main.i"
+	@echo "... glucose_task_2/main.s"
 	@echo "... init_task/main.obj"
 	@echo "... init_task/main.i"
 	@echo "... init_task/main.s"
 	@echo "... logger_task/main.obj"
 	@echo "... logger_task/main.i"
 	@echo "... logger_task/main.s"
-	@echo "... master_task/main.obj"
-	@echo "... master_task/main.i"
-	@echo "... master_task/main.s"
-	@echo "... slave_task/main.obj"
-	@echo "... slave_task/main.i"
-	@echo "... slave_task/main.s"
 	@echo "... sos_task/main.obj"
 	@echo "... sos_task/main.i"
 	@echo "... sos_task/main.s"

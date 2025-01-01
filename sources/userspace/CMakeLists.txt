@@ -37,5 +37,5 @@ ADD_USERSPACE_EXECUTABLE(init_task init_task/main.cpp)
 # volitelne tasky pro ruzne ulohy
 ADD_USERSPACE_EXECUTABLE(sos_task sos_task/main.cpp)
 ADD_USERSPACE_EXECUTABLE(logger_task logger_task/main.cpp)
-ADD_USERSPACE_EXECUTABLE(master_task master_task/main.cpp)
-ADD_USERSPACE_EXECUTABLE(slave_task slave_task/main.cpp)
+ADD_USERSPACE_EXECUTABLE(glucose_task_1 glucose_task_1/main.cpp)
+ADD_USERSPACE_EXECUTABLE(glucose_task_2 glucose_task_2/main.cpp)

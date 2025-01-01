@@ -46,6 +46,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/init_task.dir/DependInfo.cmake"
   "CMakeFiles/sos_task.dir/DependInfo.cmake"
   "CMakeFiles/logger_task.dir/DependInfo.cmake"
-  "CMakeFiles/master_task.dir/DependInfo.cmake"
-  "CMakeFiles/slave_task.dir/DependInfo.cmake"
+  "CMakeFiles/glucose_task_1.dir/DependInfo.cmake"
+  "CMakeFiles/glucose_task_2.dir/DependInfo.cmake"
   )
