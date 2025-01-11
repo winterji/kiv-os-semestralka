@@ -1,7 +1,0 @@
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/build/CMakeFiles/init_task.dir
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/build/CMakeFiles/sos_task.dir
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/build/CMakeFiles/logger_task.dir
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/build/CMakeFiles/glucose_task_1.dir
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/build/CMakeFiles/glucose_task_2.dir
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/build/CMakeFiles/edit_cache.dir
-/Users/winterji/Desktop/FAV/Navazujici/OS/semestralka-kiv-os/sources/userspace/build/CMakeFiles/rebuild_cache.dir
