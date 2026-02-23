@@ -1,4 +1,7 @@
-# KIV-RTOS
+# KIV-OS-Semestral work
+A semestral work for course Operating Systems by Jiří Winter. This project builds on top of KIV-RTOS developed by Ing. Martin Úbl and implements I2C interface on Raspberry Pi Zero W (BCM2835-based board).
+
+## KIV-RTOS
 An educational operating system for bare-metal Raspberry Pi Zero W (BCM2835-based board).
 
 This software is developed as a demonstration project for operating systems course on University of West Bohemia, Department of Computer Science and Engineering (KIV/OS).
